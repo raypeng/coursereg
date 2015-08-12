@@ -1,0 +1,714 @@
+﻿body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
+}
+
+a img {
+  border: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+.unselectable {
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.courseCode {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.searchTip {
+  color: #b4b4b4;
+}
+
+.widgetTitle {
+  padding-top: 5px;
+  padding-right: 30px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  height: 30px;
+  background-color: #eee;
+  font-family: Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif;
+  font-weight: 600;
+  font-size: 10pt;
+}
+
+.widget {
+  border: 2px solid #ddd;
+}
+
+.delete {
+  display: inline-block;
+  float: right;
+  left: 85%;
+  top: 15%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-image: url("../Images/delete.png");
+  background-position-x: -96px;
+  background-position-y: -128px;
+  background-repeat: no-repeat;
+  background-size:contain;
+  display: none;
+}
+
+.listItem {
+  display: -moz-inline-stack;
+  display: inline-block;
+  clear: both;
+  width: 70%;
+  height: 20px;
+  zoom: 1;
+  -ms-zoom: 1;
+}
+
+.hasTooltip:before {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  z-index: 100;
+  visibility: hidden;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #404040;
+  border-left: 5px solid transparent;
+  content: "";
+}
+
+.dropDown:before {
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  z-index: 100;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid rgba(100,100,100,.5);
+  border-left: 5px solid transparent;
+  content: "";
+}
+
+.dropDown:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background: rgba(100,100,100,.5);
+  white-space: nowrap;
+}
+
+.hasTooltip:after,.dropDown:after {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  z-index: 100;
+  visibility: hidden;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background: #404040;
+  color: #fff;
+  content: attr(data-tooltip);
+  white-space: nowrap;
+}
+
+::-ms-clear {
+  display: none;
+}
+
+.borderless {
+  border: none;
+  outline: none;
+}
+
+img.loading {
+  float: right;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 5px 10px 0 0;
+}
+
+.magnify {
+  background: url('../Images/magnify.png') no-repeat;
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  text-indent: -9999px;
+  top: 1px;
+  width: 20px;
+  float: right;
+  right: 10px;
+}
+
+#pageHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  border-bottom: 2px #e18103 solid;
+  background: #ff9000;
+  cursor: default;
+  overflow: hidden;
+}
+
+#pageHeader #beta {
+  display: inline;
+  color: #fff;
+  font-size: 8pt;
+}
+
+#pageHeader #title {
+  display: inline;
+  margin-left: 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15pt;
+  font-family: Consolas,"Open Sans",'Lucida Console',Arial;
+  line-height: 35px;
+}
+
+#pageHeader #year-info {
+  display: inline;
+  color: #fff;
+  font-size: 8pt;
+}
+
+#pageHeader #subtitle {
+  display: inline;
+  margin-right: 30px;
+  margin-left: 30px;
+  color: #8b3c0d;
+  font-weight: 600;
+  font-size: 10pt;
+}
+
+#pageHeader #note {
+  display: inline;
+  text-align: right;
+  margin-right: 30px;
+  margin-left: 30px;
+  color: #8b3c0d;
+  font-weight: 600;
+  font-size: 10pt;
+}
+
+#pageHeader #updateTime {
+  display: inline;
+  color: #8b3c0d;
+  font-weight: 600;
+  font-size: 10pt;
+}
+
+#pageHeader .headerLinks {
+  display: inline;
+  *display: inline;
+  float: right;
+  padding-top: 13px;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 23px;
+  border-left: 1px solid #fbbc58;
+  color: #fff;
+  font-weight: 700;
+  font-size: 9pt;
+  cursor: pointer;
+}
+
+#pageHeader .headerLinks:hover {
+  color: #8b3c0d;
+}
+
+#pageWrapper {
+  padding-top: 45px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+}
+
+
+#pageWrapper {
+  padding-top: 45px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+}
+
+#sideBar {
+  display: inline-block;
+  background: #fff;
+}
+
+#sideBar #searchWidget .widgetTitle {
+  height: 30px;
+}
+
+.searchBoxWrapper {
+  outline: 3px medium #f90;
+  border: solid 2px #ccc;
+}
+
+#sideBar #searchBox {
+  margin-right: auto;
+  margin-left: 2px;
+  margin-top: 0;
+  padding-right: 10px;
+  height: 24px;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+}
+
+#resultViewWrapper {
+  height: auto;
+  max-height: 300px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  display: none;
+}
+
+#sideBar #resultView {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  max-height: 300px;
+  font-size: 10pt;
+  cursor: default;
+  z-index: 100;
+  background-color: #fff;
+}
+
+#sideBar #resultView .matchCollection {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#sideBar #resultView .matchCollectionTitle {
+  padding-left: 10px;
+  height: 20px;
+  border-left: 5px solid #ff9000;
+  font-weight: 800;
+  font-family: "Open Sans","lucida grande","Segoe UI";
+  cursor: pointer;
+}
+
+#sideBar #resultView ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#sideBar #resultView li {
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  width: 100%;
+  height: 20px;
+  list-style: none;
+  font-size: 9pt;
+  line-height: 20px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+#sideBar #resultView li:hover {
+  background-color: #ffe7bb;
+}
+
+#sideBar #resultView li.selected {
+  background-color: #ff9000;
+  color: #fff;
+}
+
+#sideBar #addedCoursesList {
+  padding: 0;
+  width: 100%;
+  height: auto;
+  font-size: 9pt;
+  border: none;
+}
+
+#sideBar #addedCoursesList #courseList {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+  padding-top: 10px;
+  width: 100%;
+}
+
+#sideBar #addedCoursesList .listItem {
+  overflow-x: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 5px;
+  width: 100%;
+  line-height: 20px;
+  min-height: 40px;
+  height: auto;
+  cursor: default;
+  border: 2px solid #dec9b3;
+  border-left: 8px solid #dec9b3;
+  margin: 4px 0 4px 0;
+  background-color: #fff;
+  z-index: 1;
+}
+
+#sideBar #addedCoursesList .listItem:hover {
+  border-color: #ffe7bb;
+}
+
+#sideBar #addedCoursesList .listItem.selected {
+  border-color: #ff9000;
+}
+
+#sideBar #addedCoursesList .listItem .listItem-title {
+  display: inline-block;
+  font-weight: 700;
+  width: 80%;
+}
+
+#calendarViews {
+  display: -moz-inline-stack;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  font-size: 9pt;
+  border-top: none;
+}
+
+#calendarViews #calendarControlBar {
+  display: block;
+  height: 30px;
+  background-color: #eee;
+  background: #eee url(images/ui-bg_highlight-hard_100_eeeeee_1x100.png) 50% 50% repeat-x;
+  font-family: Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif;
+}
+
+#calendarViews .calendarControls {
+  display: inline-block;
+  padding: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+#calendarViews .calendarControls:hover {
+  border-color: #ffe7bb;
+}
+
+#calendarViews .calendarControls.selected {
+  border-color: #ff9000;
+}
+
+#calendarViews #downloadIcs {
+  float: left;
+  -moz-background-size: 20px;
+  -o-background-size: 20px;
+  -webkit-background-size: 20px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+
+#calendarViews #shareLink {
+  float: left;
+}
+
+#calendarViews .singleCalendar {
+  display: inline-block;
+  clear: both;
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding-left: 10px;
+}
+
+#calendarViews .singleCalendar .name {
+  width: 28px;
+}
+
+#calendarViews .singleCalendar table {
+  position: static;
+  border-collapse: collapse;
+  border-bottom: 1px solid #ccc;
+}
+
+#calendarViews .singleCalendar .calendarContentStatic {
+  position: static;
+  overflow-y: scroll;
+}
+
+#calendarViews .singleCalendar .calendarContentWrapper {
+  position: relative;
+}
+
+#calendarViews .singleCalendar .calendarContent {
+  border: none;
+}
+
+#calendarViews .singleCalendar table .t0 td {
+  border: none;
+}
+
+#calendarViews .singleCalendar table td {
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 20px;
+  color: #999;
+}
+
+#calendarViews .singleCalendar td.highlightGrid {
+  background-color: #cae3f8;
+}
+
+#calendarViews .calendarItem {
+  position: absolute;
+  overflow: hidden;
+  padding: 2px 0 0 4px;
+  border: 1px solid #05b5f8;
+  background-color: #e3f5fb;
+}
+
+#calendarViews .calendarItem.UTM {
+  border: 1px solid #ae66ff;
+  background-color: #f5e7fb;
+}
+
+#calendarViews .calendarItem.UTSC {
+  border: 1px solid #32965f;
+  background-color: #d8f1e0;
+}
+
+#calendarViews .calendarItem.highlight {
+  background-color: #c3f0fc;
+}
+
+#calendarViews .calendarItem.highlight.UTM {
+  background-color: #ecccfb;
+}
+
+#calendarViews .calendarItem.highlight.UTSC {
+  background-color: #b5e4c4;
+}
+
+#calendarViews .calendarItem.conflict {
+  border: 1px solid red;
+  background-color: #f8c7c7;
+}
+
+#calendarViews .calendarItem.conflict:hover,#calendarViews .calendarItem.conflict.highlight,#calendarViews .calendarItem.conflict.hover,#calendarViews .calendarItem.conflict.UTM.hover,#calendarViews .calendarItem.conflict.UTSC.hover {
+  background-color: #f6aeae;
+}
+
+#calendarViews .calendarItem .itemInfo {
+  width: 200px;
+}
+
+#calendarViews .calendarItem.hover {
+  background-color: #c3f0fc;
+}
+
+#calendarViews .calendarItem.hover.UTM {
+  background-color: #ecccfb;
+}
+
+#calendarViews .calendarItem.hover.UTSC {
+  background-color: #b5e4c4;
+}
+
+#calendarViews .calendarItem.hover .removeItem,#calendarViews .calendarItem.hover.UTSC .removeItem,#calendarViews .calendarItem.hover.UTM .removeItem {
+  display: inline-block;
+  color: red;
+  cursor: pointer;
+}
+
+#calendarViews tr.calendarHeader {
+  height: 30px;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+#calendarViews .singleCalendar td.timeDisplay {
+  border-top: 1px solid #ddd;
+}
+
+#calendarViews .singleCalendar td.name {
+  color: #000;
+  vertical-align: bottom;
+  text-align: left;
+  font-weight: 800;
+}
+
+#calendarViews .singleCalendar td.line {
+  border-top: 1px solid #ddd;
+}
+
+#calendarViews td.timeDisplay {
+  width: 40px;
+  color: #aaa;
+  vertical-align: top;
+  text-align: left;
+}
+
+#courseInfo {
+  position: absolute;
+  padding: 10px 0 10px 10px;
+  left: 350px;
+  display: none;
+  font-size: 10pt;
+  background-color: #fff;
+}
+
+#courseInfo .wrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 10px;
+  width: 300px;
+  max-height: 600px;
+  height: auto;
+}
+
+#courseInfo div {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#courseInfo .section {
+  display: inline-block;
+  margin-right: 2px;
+  margin-left: 2px;
+  padding-right: 1px;
+  padding-left: 1px;
+  border: 1px solid green;
+  color: green;
+  cursor: pointer;
+}
+
+#courseInfo .section.conflict {
+  border: 1px solid red;
+  color: red;
+}
+
+#courseInfo .section.added {
+  border: 1px solid green;
+  background-color: green;
+  color: #fff;
+}
+
+#courseInfo .section.added.conflict {
+  border: 1px solid red;
+  background-color: red;
+  color: #fff;
+}
+
+.ui-tabs-nav {
+  border: none;
+  background-color: #fff;
+}
+
+#aboutPanel {
+  position: absolute;
+  top: 37px;
+  left: 85%;
+  display: none;
+  padding: 10px;
+  width: 150px;
+  background-color: #fff;
+  font-size: 10pt;
+  opacity: .85;
+  cursor: default;
+}
+
+#calItemInfo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  padding: 5px;
+  width: 150px;
+  background: #fff;
+  font-size: 9pt;
+  border: 2px solid #ddd;
+  cursor: default;
+}
+
+#calItemInfo .removeItem {
+  width: 20%;
+  color: red;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.ui-dialog {
+  padding: 0;
+}
+
+.ui-dialog-titlebar {
+  font-family: 'Segoe UI',"Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
+  font-size: 10pt!important;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+  margin: 0;
+  padding: 0;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+  padding: 0;
+  margin: 5px;
+  float: left;
+}
+
+.ui-button-text {
+  font-family: 'Segoe UI',"Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
+  font-size: 10pt;
+}
+
+.ui-widget-header {
+  background-image: none;
+}
+
+footer {
+  color: #aaa;
+  font-size: 10pt;
+  text-align: center;
+  top: 500px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #999;
+}

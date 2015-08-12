@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CourseReg</title>
+
+    <link type="text/css" href="Styles/bootstrap.min.css" rel="stylesheet" />
+    <link type="text/css" href="Styles/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" />
+    <link type="text/css" href="Styles/Default.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="Scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="Scripts/require.js"></script>
+
+    <script type="text/javascript" src="Scripts/Calendar.js"></script>
+    <script type="text/javascript" src="Scripts/Default.js"></script>
+
+    <script>
+     var courseData;
+     requirejs.config({
+       paths: {
+         "text": "Scripts/text",
+         "json": "Scripts/json",
+       }
+     });
+     require(['json!Scripts/new.json'], function(data){
+       courseData = data;
+     });
+    </script>
+
+  </head>
+  <body>
+    <header id="pageHeader" class="unselectable">
+      <div id="title" class="unselectable">CourseReg</div>
+      <div id="year-info" class="unselectable">2015-16</div>
+      <div id="beta" class="unselectable">beta</div>
+      <div id="note" class="unselectable">
+        Adapted from <a href="http://griddy.org">Griddy.org</a> by <a href="mailto:rpeng@connect.ust.hk">Rui Peng</a> -
+        Original Author &copy; <a href="mailto:m.ren@mail.utoronto.ca">Mengye Ren</a>
+      </div>
+      <div id="subtitle" class="unselectable">
+        [ still in development | use at your own risk | report bug to rpeng@ust.hk | share with your friend if you find helpful ]
+      </div>
+    </header>
+    <div class="container-fluid" id="pageWrapper">
+      <div id="sideBar" class="col-md-4">
+        <div id="searchWidget" class="widget2">
+          <div class="searchBoxWrapper" id="courseWrapper">
+            <input id="searchBox" class="borderless" placeholder="Search Courses"/><div class="magnify"></div>
+          </div>
+          <div id="resultViewWrapper">
+            <div id="resultView" class="unselectable">
+            </div>
+          </div>
+        </div>
+        <div id="addedCoursesList" class="unselectable widget">
+        </div>
+      </div>
+      <div id="calendarViews" class="col-md-8 widget unselectable"></div>
+    </div>
+
+    <div id="courseInfo" class="widget"></div>
+    <div id="calItemInfo"></div>
+    <footer>
+      Adapted from <a href="http://griddy.org">Griddy.org</a> by <a href="mailto:rpeng@connect.ust.hk">Rui Peng</a> - 
+      &copy; <a href="mailto:m.ren@mail.utoronto.ca">Mengye Ren</a>
+      <span id="udpateTime"></span>
+    </footer>
+    <iframe id="hiddenDownloader" style="display: none"></iframe>
+  </body>
+
+</html>
