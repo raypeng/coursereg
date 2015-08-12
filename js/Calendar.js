@@ -149,7 +149,6 @@ Calendar.prototype.removeItem = function (id) {
         delete this.items[uid];
     }
     itemsToBeDeleted.remove();
-    $("#calItemInfo").hide();
     this.resize();
 }
 
@@ -164,7 +163,6 @@ Calendar.prototype.removeCourse = function (courseID) {
         delete this.items[uid];
     }
     itemsToBeDeleted.remove();
-    $("#calItemInfo").hide();
     this.resize();
 }
 
