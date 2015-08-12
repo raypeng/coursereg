@@ -114,11 +114,11 @@ $(document).ready(function () {
         });
 
         // Add update time string
-        $.ajax(
-            { url: "Handlers/UpdateHandler.ashx" }
-        ).done(function (data) {
-            $("#updateTime").html(data);
-        });
+        // $.ajax(
+        //     { url: "Handlers/UpdateHandler.ashx" }
+        // ).done(function (data) {
+        //     $("#updateTime").html(data);
+        // });
 
         layout();
         var link = getUrlParameters()["link"];
@@ -216,7 +216,7 @@ $(document).ready(function () {
 
     function loadingOn(item) {
         $(".loading").remove();
-        item.append("<img class='loading' src='Images/ajax-loader.gif' style='float:right;'/>")
+        item.append("<img class='loading' src='images/ajax-loader.gif' style='float:right;'/>")
     }
 
     function loadingOff() {
@@ -624,7 +624,7 @@ $(document).ready(function () {
                 $("<div class='listItem' id='listItem" + item.CourseID + "'></div>")
                     .data("id", item.CourseID)
                     .html(
-                        "<div class='listItem-title'>" + item.ShortName + "</div><div class='delete'></div><div>" + sectionString + "</div>"
+                        "<div class='listItem-title'>" + item.ShortName + "</div><div class='delete'>Delete</div><div>" + sectionString + "</div>"
                     ));
         }
 

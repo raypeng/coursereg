@@ -68,12 +68,10 @@ a img {
 .delete {
   display: inline-block;
   float: right;
-  left: 85%;
+  left: 80%;
   top: 15%;
-  width: 20px;
   height: 20px;
   cursor: pointer;
-  background-image: url("../Images/delete.png");
   background-position-x: -96px;
   background-position-y: -128px;
   background-repeat: no-repeat;
@@ -157,7 +155,7 @@ img.loading {
 }
 
 .magnify {
-  background: url('../Images/magnify.png') no-repeat;
+  background: url('../images/magnify.png') no-repeat;
   display: inline-block;
   height: 20px;
   position: relative;
@@ -284,6 +282,7 @@ img.loading {
   margin-top: 0;
   padding-right: 10px;
   height: 24px;
+  width: 90%;
   border: none;
   outline: none;
   vertical-align: middle;
@@ -414,7 +413,6 @@ img.loading {
   display: block;
   height: 30px;
   background-color: #eee;
-  background: #eee url(images/ui-bg_highlight-hard_100_eeeeee_1x100.png) 50% 50% repeat-x;
   font-family: Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif;
 }
 

@@ -6,26 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>CourseReg</title>
 
-    <link type="text/css" href="Styles/bootstrap.min.css" rel="stylesheet" />
-    <link type="text/css" href="Styles/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" />
-    <link type="text/css" href="Styles/Default.css" rel="stylesheet" />
+    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
+    <link type="text/css" href="css/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" />
+    <link type="text/css" href="css/Default.css" rel="stylesheet" />
 
-    <script type="text/javascript" src="Scripts/jquery.min.js"></script>
-    <script type="text/javascript" src="Scripts/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="Scripts/require.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/require.js"></script>
 
-    <script type="text/javascript" src="Scripts/Calendar.js"></script>
-    <script type="text/javascript" src="Scripts/Default.js"></script>
+    <script type="text/javascript" src="js/Calendar.js"></script>
+    <script type="text/javascript" src="js/Default.js"></script>
 
     <script>
      var courseData;
      requirejs.config({
        paths: {
-         "text": "Scripts/text",
-         "json": "Scripts/json",
+         "text": "js/text",
+         "json": "js/json",
        }
      });
-     require(['json!Scripts/new.json'], function(data){
+     require(['json!js/new.json'], function(data){
        courseData = data;
      });
     </script>
