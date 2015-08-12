@@ -326,7 +326,7 @@ function CalendarCollection(placeholder, list) {
 
     $("#downloadIcs").click(function () {
         var queryString = this.getAllSectionsString();
-        $("#hiddenDownloader").attr("src", "Handlers/ICalHandler.ashx?Courses=" + queryString);
+        // $("#hiddenDownloader").attr("src", "Handlers/ICalHandler.ashx?Courses=" + queryString);
     }.bind(this));
 
 }
