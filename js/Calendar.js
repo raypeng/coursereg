@@ -142,7 +142,7 @@ Calendar.prototype.removeItem = function (id) {
     var itemsToBeDeleted = $(this.placeholder).find(".cal" + id);
     for (var i = 0; i < itemsToBeDeleted.length; i++) {
         var uid = $(itemsToBeDeleted[i]).attr("id");
-        for (var j = this.items[uid].StartTime; j < this.items[uid].EndTime; j++) {
+        for (var j = this.items[uid].StartTime; j <= this.items[uid].EndTime; j++) {
             var array = this.itemSlot[this.items[uid].Day - 1][j];
             array.splice(array.indexOf(this.items[uid]), 1);
         }
@@ -157,7 +157,7 @@ Calendar.prototype.removeCourse = function (courseID) {
     var itemsToBeDeleted = $(this.placeholder).find(".course" + courseID);
     for (var i = 0; i < itemsToBeDeleted.length; i++) {
         var uid = $(itemsToBeDeleted[i]).attr("id");
-        for (var j = this.items[uid].StartTime; j < this.items[uid].EndTime; j++) {
+        for (var j = this.items[uid].StartTime; j <= this.items[uid].EndTime; j++) {
             var array = this.itemSlot[this.items[uid].Day - 1][j];
             array.splice(array.indexOf(this.items[uid]), 1);
         }
@@ -198,7 +198,7 @@ Calendar.prototype.getBaseCalendar = function () {
 Calendar.prototype.refreshDivision = function (item) {
     var maxItems = 0;
     var unavailableSlot = {};
-    for (var i = item.StartTime; i < item.EndTime; i++) {
+    for (var i = item.StartTime; i <= item.EndTime; i++) {
         var slot = this.itemSlot[item.Day - 1][i];
         var itemCount = 0;
         for (var slotItem in slot) {
@@ -255,7 +255,7 @@ Calendar.prototype.resize = function () {
 
 Calendar.prototype.isConflicted = function (item) {
     var hasItem = this.hasItem(item);
-    for (var i = item.StartTime; i < item.EndTime; i++) {
+    for (var i = item.StartTime; i <= item.EndTime; i++) {
         if (this.itemSlot[item.Day - 1][i].length > 0 && !hasItem) return true;
         if (this.itemSlot[item.Day - 1][i].length > 1) return true;
     }
