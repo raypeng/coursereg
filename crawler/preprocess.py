@@ -121,10 +121,13 @@ def parse_sessions(s):
                             r'[\d]{2}A?P?M\s*-\s*[\d]{2}:[\d]{2}A?P?M')
     times = [reduce(add, map(map_time, re.findall(time_regex, t)), [])
              for t in td]
+    tutors = map(lambda s: s[s.index('>')+1:s.index('<', 2)]
+                 if '<a' in s else s,
+                 [re.search(r'<td>(.*?)</td>', d[2]).group(1) for d in tds])
     try:
         details = [{'time': times.pop(0),
                     'loc': re.search(r'<td>(.*?)</td>', d[1]).group(1),
-                    'tutor': re.search(r'<td><a.*>(.*?)</a></td>', d[2]).group(1)}
+                    'tutor': tutors.pop(0)}
                    for d in tds]
         dt = dict(zip(titles, details))
         sessions = arrange_sessions(dt)
@@ -140,6 +143,7 @@ def parse_course(s):
     {"Abbr": "PHYS1003", "Corequisites": "", "ID": 123,
     "Description": "some easy course", "Exclusions": "PHYS1001",
     "Name": "Env Physics", "Prerequisites": "", "Credits": 3, 
+    "Matching": false,
     "Sections": [{ "Instructor": "gg", "Location": "LTA", "Name": "L1", 
     "ParsedTime": { "MeetTimes": [111, 112, 113] } }, { "Instructor": "ray",
     "Location": "LTC", "Name": "L2", "ParsedTime": { "MeetTimes":
@@ -149,9 +153,10 @@ def parse_course(s):
                + r'\((?P<Credits>[\d+.]*\d+) unit[s]*\)(?=</h2>)', s)
     info = intro.groupdict()
     info['Abbr'] = ''.join(info['Abbr'].split(' '))
-    print info['Abbr']
+    print info['Abbr'],
     info['Credits'] = float(info['Credits'])
     info['Name'] = info['Name'].replace("'", ' ')
+    info['Matching'] = '<div class="matching">' in s
 
     ex = re.search(r'<th>EXCLUSION</th><td>(.*?)</td>', s)
     info['Exclusions'] = ex.group(1) if ex else ''
@@ -169,8 +174,10 @@ def parse_course(s):
     sessions_info = parse_sessions(s)
     if sessions_info: # ecluding not meaningful courses
         info['Sections'] = sessions_info
+        print
         return { info['ID']: info }
     else:
+        print 'fail'
         return {}
 
 
@@ -215,5 +222,4 @@ def json2js(infile, outfile):
 
 if __name__ == "__main__":
     catalog = get_json(INDEX)
-    save_json(catalog, '../Scripts/new.json')
-    # json2js('new.json', '../Scripts/Data.js')
+    save_json(catalog, '../js/new.json')

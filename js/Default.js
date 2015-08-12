@@ -68,29 +68,6 @@ $(document).ready(function () {
     $("#searchBox").addClass("searchTip");
     setCaretPosition("searchBox", 0);
 
-    $("#programSearchBox").addClass("searchTip");
-    $("#programSearchBox").val("Search Programs");
-
-    $("#programSearchBox").keydown(function () {
-        if ($(this).hasClass("searchTip")) {
-            $(this).val("");
-            $(this).removeClass("searchTip");
-        }
-    });
-    $("#programSearchBox").keyup(function () {
-        progSearchStringTemp = $("#programSearchBox").val();
-        setTimeout(function () {
-            if ($("#programSearchBox").val() === progSearchStringTemp) {
-                searchProgram(progSearchStringTemp);
-            }
-        }, 300);
-    });
-    $("#programSearchBox").focus(function () {
-        if (!$(this).hasClass("searchTip")) {
-            selectAll("programSearchBox");
-        }
-    });
-
     $(document).click(function (e) {
         if ($(e.target).attr("id") !== "courseInfo"
             && $(e.target).parents("#courseInfo").length == 0) {
@@ -351,6 +328,11 @@ $(document).ready(function () {
             content += "<div class='courseInfoDescription'>" + course.Description + "</div>";
         }
 
+        // Add matching hint
+        if (course.Matching) {
+            content += "<div id='courseInfoMathingSections'><b>Matching between Lecture & Tutorial Required</b></div>";
+        }
+
         // Add lecture sections
         content += "<div class='sectionDiv'><div id='courseInfoLectureSections'><b>Lecture Sections:</b>";
         var lectureCount = 0;
@@ -476,6 +458,7 @@ $(document).ready(function () {
         item.CourseID = course.ID;
         item.Credits = course.Credits;
         item.Location = course.Sections[i].Location;
+        item.Matching = course.Matching;
 
         if (meetTimes) {
             if (meetTimes[j]) {
