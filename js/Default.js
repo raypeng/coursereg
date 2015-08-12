@@ -128,21 +128,43 @@ $(document).ready(function () {
         });
         var resultString = "";
         var ks = Object.keys(courseData);
+
+        query = query.trim().toLowerCase();
         var already = [];
-        for (var i in ks) {
-            var ii = ks[i];
-            if (courseData[ii]['Abbr'].toLowerCase().indexOf(query.toLowerCase()) > -1) {
-                var s = "<li id='c" + courseData[ii]["ID"].toString() + "' class='courseResult'>" + courseData[ii]["Abbr"] + ": " + courseData[ii]["Name"] + "</li>";
-                resultString += s;
-                already.push(ii);
+        var match = Array.apply(null, Array(2000)).map(function (_, i) {return i.toString();});
+        var keywords = query.trim().split(" ");
+
+        for (var ki in keywords) {
+            var k = keywords[ki];
+            
+            // first search match in title
+            already = [];
+            for (var i in ks) {
+                var ii = ks[i];
+                if (courseData[ii]['Abbr'].toLowerCase().indexOf(k) > -1) {
+                    already.push(ii);
+                }
             }
+
+            // search title in other descriptions
+            for (var i in ks) {
+                var ii = ks[i];
+                if (courseDataString[ii].toLowerCase().indexOf(k) > -1 && already.indexOf(ii) == -1) {
+                    already.push(ii);
+                }
+            }
+
+            // intersect all results
+            match = already.filter(function(v) { 
+                return match.indexOf(v) > -1;
+            });
+
         }
-        for (var i in ks) {
-            var ii = ks[i];
-            if (courseDataString[ii].toLowerCase().indexOf(query.toLowerCase()) > -1 && already.indexOf(ii) == -1) {
-                var s = "<li id='c" + courseData[ii]["ID"].toString() + "' class='courseResult'>" + courseData[ii]["Abbr"] + ": " + courseData[ii]["Name"] + "</li>";
-                resultString += s;
-            }
+
+        for (var i in match) {
+            var ii = match[i];
+            var s = "<li id='c" + courseData[ii]["ID"].toString() + "' class='courseResult'>" + courseData[ii]["Abbr"] + ": " + courseData[ii]["Name"] + "</li>";
+            resultString += s;
         }
         return resultString;
     }
@@ -682,7 +704,7 @@ $(document).ready(function () {
     function readCookieAddCourse() {
         // var queryString = Base64.decode(getCookie("AddedCourses"));
         var queryString = getCookie("AddedCourses");
-        console.log("cookie: " + queryString);
+        // console.log("cookie: " + queryString);
         // readStringAddCourse(queryString);
         readStringAddCourse("");
     }
