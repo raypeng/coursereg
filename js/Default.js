@@ -35,6 +35,7 @@ function selectAll(id) {
 $(document).ready(function () {
 
     $(window).resize(layout);
+    $('#version').html('ver: ' + document.lastModified);
 
     coursesList = new CoursesList(document.getElementById("addedCoursesList"));
     calendar = new CalendarCollection(document.getElementById("calendarViews"), coursesList);

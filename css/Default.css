@@ -211,7 +211,6 @@ img.loading {
 
 #pageHeader #note {
   display: inline;
-  text-align: right;
   margin-right: 30px;
   margin-left: 30px;
   color: #8b3c0d;
@@ -219,8 +218,10 @@ img.loading {
   font-size: 10pt;
 }
 
-#pageHeader #updateTime {
+#pageHeader #version {
   display: inline;
+  margin-right: 30px;
+  margin-left: 30px;
   color: #8b3c0d;
   font-weight: 600;
   font-size: 10pt;
