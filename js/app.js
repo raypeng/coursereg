@@ -42,12 +42,14 @@ $(document).ready(function () {
 
     $("#searchBox").val("");
     $("#searchBox").keydown(function () {
+        $('#courseInfo').hide();
         if ($(this).hasClass("searchTip")) {
             $(this).val("");
             $(this).removeClass("searchTip");
         }
     });
     $("#searchBox").keyup(function () {
+        $('#courseInfo').hide();
         searchStringTemp = $("#searchBox").val();
         setTimeout(function () {
             if ($("#searchBox").val() === searchStringTemp) {
@@ -138,20 +140,36 @@ $(document).ready(function () {
         for (var ki in keywords) {
             var k = keywords[ki];
             
-            // first search match in title
             already = [];
+
+            // search match in course code
             for (var i in ks) {
                 var ii = ks[i];
-                if (courseData[ii]['Abbr'].toLowerCase().indexOf(k) > -1) {
+                if (already.indexOf(ii) == -1 &&
+                    courseData[ii]['Abbr'].toLowerCase().indexOf(k) > -1) {
                     already.push(ii);
                 }
             }
 
-            // search title in other descriptions
+            // search match in course title
             for (var i in ks) {
                 var ii = ks[i];
-                if (courseDataString[ii].toLowerCase().indexOf(k) > -1 && already.indexOf(ii) == -1) {
+                if (already.indexOf(ii) == -1 &&
+                    courseData[ii]['Name'].toLowerCase().indexOf(k) > -1) {
                     already.push(ii);
+                }
+            }
+
+            // search match in instructor
+            for (var i in ks) {
+                var ii = ks[i];
+                var sections = courseData[ii].Sections;
+                for (var si in sections) {
+                    var s = sections[si];
+                    if (already.indexOf(ii) == -1 &&
+                        s.Instructor.toLowerCase().indexOf(k) > -1) {
+                        already.push(ii);
+                    }
                 }
             }
 
@@ -181,10 +199,10 @@ $(document).ready(function () {
             loadingOn($("#courseWrapper"));
             result = searchCourseJSON(query);
             new ResultView($("#resultView")[0], result);
-            if (result.length > 0) {
-                $('#courseInfo').html("");
-                $('#courseInfo').show();
-            }
+            // if (result.length > 0) {
+            //     $('#courseInfo').html("");
+            //     $('#courseInfo').show();
+            // }
             loadingOff();
         } else {
             new ResultView($("#resultView")[0], "");
