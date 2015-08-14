@@ -420,6 +420,7 @@ img.loading {
 #calendarViews .calendarControls {
   display: inline-block;
   padding: 5px;
+  padding-left: 10px;
   font-weight: 700;
   cursor: pointer;
   border: 2px solid transparent;
@@ -433,7 +434,7 @@ img.loading {
   border-color: #ff9000;
 }
 
-#calendarViews #downloadIcs {
+#calendarViews #downloadcal {
   float: left;
   -moz-background-size: 20px;
   -o-background-size: 20px;
@@ -714,4 +715,8 @@ footer a {
 
 #fork-ribbon {
   background-color: orange;
+}
+
+#dummy {
+  display: none;
 }

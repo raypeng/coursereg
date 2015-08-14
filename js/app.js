@@ -6,6 +6,7 @@ var courseInfo;
 var coursesList;
 var isSearching;
 var courseData;
+var all_courses;
 
 function setCaretPosition(elemId, caretPos) {
     var elem = document.getElementById(elemId);
@@ -71,6 +72,17 @@ $(document).ready(function () {
     $("#searchBox").addClass("searchTip");
     setCaretPosition("searchBox", 0);
 
+    requirejs.config({
+        paths: {
+            "text": "js/text",
+            "json": "js/json",
+        }
+    });
+    require(['json!js/new.json'], function(data){
+        courseData = data;
+        readCookieAddCourse();
+    });
+    
     $(document).click(function (e) {
         if ($(e.target).attr("id") !== "courseInfo"
             && $(e.target).parents("#courseInfo").length == 0) {
@@ -93,21 +105,15 @@ $(document).ready(function () {
             searchProgram($("#programSearchBox").val());
         });
 
-        // Add update time string
-        // $.ajax(
-        //     { url: "Handlers/UpdateHandler.ashx" }
-        // ).done(function (data) {
-        //     $("#updateTime").html(data);
-        // });
-
         layout();
-        var link = getUrlParameters()["link"];
-        if (link) {
-            readCookieAddCourse();
-            // readStringAddCourse(Base64.decode(link));
-        } else {
-            readCookieAddCourse();
-        }
+
+        // var link = getUrlParameters()["link"];
+        // if (link) {
+        //     readStringAddCourse(Base64.decode(link));
+        // } else {
+        //     readCookieAddCourse();
+        // }
+
     });
 
     function layout() {
@@ -220,6 +226,18 @@ $(document).ready(function () {
     function searchCourseInfo(id, target) {
         var course = courseData[id.substring(1)];
         courseInfo = new CourseInfo($("#courseInfo"), course, target);
+    }
+
+    function searchCourseSection(code, section) {
+        if (all_courses === undefined) {
+            var ids = Object.keys(courseData);
+            all_courses = ids.map(function(id) { return courseData[id]; });
+        }
+        var course = all_courses.filter(function(c) { return c['Abbr'] === code; })[0];
+        var courseInfo = new CourseInfo($('#dummy'), course, '#dummy');
+        var sids = Object.keys(course.Sections);
+        var section_id = sids.filter(function(i) { return course.Sections[i]['Name'] === section; });
+        courseInfo.addSection(section_id, true);
     }
 
     function searchCourseCodeCallback(code, callback) {
@@ -721,57 +739,21 @@ $(document).ready(function () {
     }
 
     function readCookieAddCourse() {
-        // var queryString = Base64.decode(getCookie("AddedCourses"));
         var queryString = getCookie("AddedCourses");
-        // console.log("cookie: " + queryString);
-        // readStringAddCourse(queryString);
-        readStringAddCourse("");
+        console.log("cookie: " + queryString);
+        if (queryString !== "") {
+            readStringAddCourse(queryString);
+        }
     }
 
-    function readStringAddCourse(queryString) {
-        if (!queryString) return;
-        var courseStrings = queryString.split(',');
-        //var regex = /([0-9]+)([A-Z]+[0-9]+)/
-        var matchedCourses = {};
-        for (var i = 0; i < courseStrings.length; i++) {
-            //var match = regex.exec(courseStrings[i]);
-            var parts = courseStrings[i].split(' ');
-            var courseCode = parts[0];
-            var sectionName = parts[1];
-
-            searchCourseCodeCallback(courseCode, function (sectionName) {
-                return function (list) {
-                    if (!checkListItems(0)) {
-                        checkListItems(1);
-                    }
-                    function checkListItems(list_index) {
-                        var courseId = list[list_index].cid;
-                        matchedCourses[courseId + sectionName] = true;
-                        searchCourseInfoCallback(courseId, function (course) {
-                            var sectionIndex = 0;
-                            //var matched = false;
-                            for (var j = 0; j < course.Sections.length; j++) {
-                                if (matchedCourses[course.ID + course.Sections[j].Name]) {
-                                    sectionIndex = j;
-                                    if (course.Sections[sectionIndex].ParsedTime.MeetTimes) {
-                                        var item = getSectionObject(course, sectionIndex, 0, course.ID + course.Sections[sectionIndex].Name);
-                                        if (!calendar.hasItem(item)) {
-                                            coursesList.addItem(item);
-                                            for (var k = 0; k < course.Sections[sectionIndex].ParsedTime.MeetTimes.length; k++) {
-                                                item = getSectionObject(course, sectionIndex, k, course.ID + course.Sections[sectionIndex].Name);
-                                                calendar.addItem(item);
-                                            }
-                                        }
-                                    }
-                                    //matched = true;
-                                }
-                            }
-                            //return matched;
-                        });
-                    }
-                }
-            }(sectionName));
-        }
+    function readStringAddCourse(courses) {
+        courses = courses.split(",");
+        courses.forEach(function(c) {
+            var d = c.split(" ");
+            var code = d[0];
+            var section = d[1];
+            searchCourseSection(code, section);
+        });
     }
 
     function refreshCookie() {

@@ -303,8 +303,8 @@ function CalendarCollection(placeholder, list) {
     this.list = list;
     this.split = true;
     $(placeholder).append("<div id='calendarControlBar' class='widgetTitle2'>" +
-        "<div id='downloadIcs' class='calendarControls hasTooltip' data-tooltip='Export iCal'>Export to iCal</div>" +
-        "<div id='shareLink' class='calendarControls hasTooltip' data-tooltip='Share Calendar'>Share Timetable</div>" +
+        "<div id='downloadcal' class='calendarControls hasTooltip' data-tooltip='Download Calender'>Save My Timetable</div>" +
+        "<div id='shareLink' class='calendarControls hasTooltip' data-tooltip='Share Calendar'>Share My Timetable</div>" +
         "<div id='fallView' class='calendarControls selected'>Fall</div>"
         + "</div>");
     $(placeholder).append("<div id='fallCalendar' class='singleCalendar'></div>");
@@ -322,9 +322,10 @@ function CalendarCollection(placeholder, list) {
         }.bind(this));
     }.bind(this));
 
-    $("#downloadIcs").click(function () {
-        var queryString = this.getAllSectionsString();
-        // $("#hiddenDownloader").attr("src", "Handlers/ICalHandler.ashx?Courses=" + queryString);
+    $("#downloadcal").click(function () {
+        var courses = this.getAllSectionsString();
+        var fname = "just_now.txt"
+        this.download(courses, fname);
     }.bind(this));
 
 }
@@ -388,4 +389,22 @@ CalendarCollection.prototype.getAllSectionsString = function () {
 
 CalendarCollection.prototype.removeCourse = function (courseID) {
     this.fallCalendar.removeCourse(courseID);
+}
+
+CalendarCollection.prototype.download = function (text, filename) {
+    // http://stackoverflow.com/questions/2897619/using-html5-javascript-to-generate-and-save-a-file#answer-18197511
+    if (text === "") {
+        return;
+    }
+    var pom = document.createElement('a');
+    pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    pom.setAttribute('download', filename);
+    
+    if (document.createEvent) {
+        var event = document.createEvent('MouseEvents');
+        event.initEvent('click', true, true);
+        pom.dispatchEvent(event);
+    } else {
+        pom.click();
+    }
 }
