@@ -446,9 +446,16 @@ img.loading {
   display: inline-block;
   padding: 5px;
   padding-left: 10px;
+  padding-right: 10px;
   font-weight: 700;
   cursor: pointer;
   border: 2px solid transparent;
+}
+
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
 }
 
 #calendarViews .calendarControls:hover {
@@ -461,15 +468,19 @@ img.loading {
 
 #calendarViews #downloadcal {
   float: left;
-  -moz-background-size: 20px;
-  -o-background-size: 20px;
-  -webkit-background-size: 20px;
-  background-size: 20px;
-  background-repeat: no-repeat;
+}
+
+#calendarViews #uploadcal {
+  float: left;
 }
 
 #calendarViews #shareLink {
   float: left;
+}
+
+#uploaddiv {
+  opacity: 0;
+  display: inline-block;
 }
 
 #calendarViews .singleCalendar {

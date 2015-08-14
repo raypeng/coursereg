@@ -77,12 +77,16 @@ $(document).ready(function () {
         paths: {
             "text": "js/text",
             "json": "js/json",
+            "moment": "js/moment",
         }
     });
     require(['json!js/new.json'], function(data){
         courseData = data; // data need to be loaded first
         readCookieAddCourse();
         just_reloaded = false;
+    });
+    define(["moment"], function (moment) {
+        moment().format();
     });
 
     $(document).click(function (e) {
@@ -107,6 +111,30 @@ $(document).ready(function () {
             searchProgram($("#programSearchBox").val());
         });
 
+        $("#uploadcal").click(function() {
+            $("#fileupload").click();
+        });
+
+        $("#fileupload").change(function() {
+            if (!window.FileReader) {
+                alert('Your browser is not supported');
+                return false;
+            }
+            var input = $("#fileupload").get(0);
+
+            // Create a reader object
+            var reader = new FileReader();
+            if (input.files.length) {
+                var textFile = input.files[0];
+                // Read the file
+                reader.readAsText(textFile);
+                // When it's loaded, process it
+                $(reader).on('load', processFile);
+            } else {
+                alert('Please upload a file before continuing')
+            }
+        });
+
         // layout();
 
         // var link = getUrlParameters()["link"];
@@ -117,6 +145,18 @@ $(document).ready(function () {
         // }
 
     });
+
+    function processFile(e) {
+        var file = e.target.result,
+        results;
+        just_reloaded = true;
+        if (file && file.length) {
+            var courses = file;
+            console.log("file: " + courses);
+            readStringAddCourse(courses);
+        }
+        just_reloaded = false;
+    }
 
     function layout() {
         // $("#pageWrapper").height($(window).height() - 85);

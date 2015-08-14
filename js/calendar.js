@@ -322,10 +322,12 @@ function CalendarCollection(placeholder, list) {
     this.list = list;
     this.split = true;
     $(placeholder).append("<div id='calendarControlBar' class='widgetTitle2'>" +
-        "<div id='downloadcal' class='calendarControls hasTooltip' data-tooltip='Download Calender'>Save My Timetable</div>" +
-        "<div id='shareLink' class='calendarControls hasTooltip' data-tooltip='Share Calendar'>Share My Timetable</div>" +
-        "<div id='fallView' class='calendarControls selected'>Fall</div>"
-        + "</div>");
+                          "<div id='downloadcal' class='calendarControls hasTooltip' data-tooltip='Download Calender'>Save My Timetable</div>" +
+                          "<div id='uploadcal' class='calendarControls hasTooltip' data-tooltip='Download Calender'>Load Saved Timetable</div>" +
+                          "<div id='uploaddiv'><input type='file' id='fileupload'></div>" +
+                          // "<div id='shareLink' class='calendarControls hasTooltip' data-tooltip='Share Calendar'>Share My Timetable</div>" +
+                          "<div id='fallView' class='calendarControls selected'>Fall</div>"
+                          + "</div>");
     $(placeholder).append("<div id='fallCalendar' class='singleCalendar'></div>");
     this.fallCalendar = new Calendar($("#fallCalendar")[0], this, "Fall");
 
@@ -343,7 +345,14 @@ function CalendarCollection(placeholder, list) {
 
     $("#downloadcal").click(function () {
         var courses = this.getAllSectionsString();
-        var fname = "just_now.txt"
+        var time = moment().format();
+        var fname = "";
+        for (var i = 0; i < time.length; i++) {
+            if (time[i] >= "0" && time[i] <= "9") {
+                fname = fname + time[i];
+            }
+        }
+        fname = fname.substring(0, 12) + ".cal";
         this.download(courses, fname);
     }.bind(this));
 
