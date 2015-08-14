@@ -197,7 +197,6 @@ $(document).ready(function () {
     }
 
     function searchCourse(query) {
-        console.log('query: ' + query);
         if ($("#searchBox").hasClass("searchTip")) {
             $("#searchBox").removeClass("searchTip");
         }
@@ -399,29 +398,34 @@ $(document).ready(function () {
         }
 
         // Add lecture sections
-        content += "<div class='sectionDiv'><div id='courseInfoLectureSections'><b>Lecture Sections:</b>";
-        var lectureCount = 0;
+        content += "<div class='sectionDiv'><div id='courseInfoLectureSections'><b>Lectures: </b>";
         for (var i = 0; i < course.Sections.length; i++) {
             if (course.Sections[i].IsLecture) {
                 content += "<div class='section' order=" + i + ">"
                     + course.Sections[i].Name + "</div>";
-                lectureCount++;
             }
         }
         content += "</div>";
 
-        if (lectureCount < course.Sections.length) {
-            // Add non-lecture sections
-            content += "<div id='courseInfoOtherSections'><b>Tutorials and Labs:</b>";
-            // TODO if distinguish tut and lab
-            for (var i = 0; i < course.Sections.length; i++) {
-                if (!course.Sections[i].IsLecture) {
-                    var item = this.getSectionObject(i, 0);
-                    content += "<div class='section' order=" + i + ">"
-                        + course.Sections[i].Name + "</div>";
-                }
+        // Add tutorial sections
+        content += "<div id='courseInfoTutorialSections'><b>Tutorials: </b>";
+        for (var i = 0; i < course.Sections.length; i++) {
+            if (!course.Sections[i].IsLecture && course.Sections[i].Name[0] === "T") {
+                var item = this.getSectionObject(i, 0);
+                content += "<div class='section' order=" + i + ">"
+                    + course.Sections[i].Name + "</div>";
             }
-            content += "</div>";
+        }
+        content += "</div>";
+
+        // Add lab sections
+        content += "<div id='courseInfoLabSections'><b>Labs: </b>";
+        for (var i = 0; i < course.Sections.length; i++) {
+            if (!course.Sections[i].IsLecture && course.Sections[i].Name[0] === "L") {
+                var item = this.getSectionObject(i, 0);
+                content += "<div class='section' order=" + i + ">"
+                    + course.Sections[i].Name + "</div>";
+            }
         }
         content += "</div>";
 

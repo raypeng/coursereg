@@ -105,7 +105,26 @@ Calendar.prototype.addItem = function (item) {
     //     parsedLocation = locations[item.Order];
     // }
 
-    var parsedTime = "";
+    var start_hr = Math.floor((item.StartTime - 1) / 2 + 8).toString();
+    if (start_hr.length < 2) {
+        start_hr = '0' + start_hr;
+    }
+    var end_hr = Math.floor((item.EndTime - 1) / 2 + 8).toString();
+    if (end_hr.length < 2) {
+        end_hr = '0' + end_hr;
+    }
+    var start_min, end_min;
+    if ((item.StartTime - 1) % 2 == 1) {
+        start_min = '30';
+    } else {
+        start_min = '00';
+    }
+    if ((item.EndTime - 1) % 2 == 1) {
+        end_min = '50';
+    } else {
+        end_min = '20';
+    }
+    var parsedTime = start_hr + ":" + start_min + " - " + end_hr + ":" + end_min;
     var parsedLocation = item.Location;
 
     var uid = item.UID;
@@ -115,10 +134,10 @@ Calendar.prototype.addItem = function (item) {
         this.itemSlot[item.Day - 1][i].push(item);
     }
     this.refreshDivision(item);
-
+    
     var content = "<div class='calendarItem course" + item.CourseID + " cal" + 
         item.ID + "' id='" + item.UID + "'><div class='itemInfo'><b>" +
-        item.Abbr + "</b><br/>@ " + parsedLocation + "</div></div>";
+        item.Abbr + "</b><br>" + parsedTime + "<br>@ " + parsedLocation + "</div></div>";
     $(this.placeholder).find(".calendarContentWrapper").append(content);
 
     this.resize();
@@ -220,7 +239,6 @@ Calendar.prototype.refreshDivision = function (item) {
 
 Calendar.prototype.resize = function () {
 
-    console.log(this.placeholder);
     $(this.placeholder).find(".calendarContentStatic").height($(this.placeholder).height() - 35);
     var timeGrid = $(this.placeholder).find(".timeGrid");
 

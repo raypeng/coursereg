@@ -183,6 +183,7 @@ img.loading {
   width: 20px;
   float: right;
   right: 10px;
+  cursor: pointer;
 }
 
 #pageHeader {
@@ -431,6 +432,7 @@ img.loading {
 
 #fallView {
   float: right;
+  padding-right: 10px;
 }
 
 #calendarViews #calendarControlBar {
@@ -622,6 +624,10 @@ img.loading {
   width: 300px;
   max-height: 400px;
   height: auto;
+}
+
+.wrapper > div {
+  padding-right: 10px;
 }
 
 #courseInfo div {
