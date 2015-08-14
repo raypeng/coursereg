@@ -29,6 +29,25 @@ a img {
   display: none;
 }
 
+/* http://stackoverflow.com/questions/2610497/change-an-inputs-html5-placeholder-color-with-css */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #b4b4b4;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #b4b4b4;
+  opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #b4b4b4;
+  opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #b4b4b4;
+}
+
 .unselectable {
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -410,6 +429,10 @@ img.loading {
   border-top: none;
 }
 
+#fallView {
+  float: right;
+}
+
 #calendarViews #calendarControlBar {
   display: block;
   height: 30px;
@@ -486,7 +509,7 @@ img.loading {
   margin: 0;
   padding: 0;
   width: 0;
-  height: 20px;
+  height: 30px;
   color: #999;
 }
 
@@ -597,7 +620,7 @@ img.loading {
   overflow-x: hidden;
   padding-right: 10px;
   width: 300px;
-  max-height: 600px;
+  max-height: 400px;
   height: auto;
 }
 

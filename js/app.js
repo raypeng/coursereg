@@ -7,6 +7,7 @@ var coursesList;
 var isSearching;
 var courseData;
 var all_courses;
+var just_reloaded = false;
 
 function setCaretPosition(elemId, caretPos) {
     var elem = document.getElementById(elemId);
@@ -79,10 +80,11 @@ $(document).ready(function () {
         }
     });
     require(['json!js/new.json'], function(data){
-        courseData = data;
+        courseData = data; // data need to be loaded first
         readCookieAddCourse();
+        just_reloaded = false;
     });
-    
+
     $(document).click(function (e) {
         if ($(e.target).attr("id") !== "courseInfo"
             && $(e.target).parents("#courseInfo").length == 0) {
@@ -105,7 +107,7 @@ $(document).ready(function () {
             searchProgram($("#programSearchBox").val());
         });
 
-        layout();
+        // layout();
 
         // var link = getUrlParameters()["link"];
         // if (link) {
@@ -195,6 +197,7 @@ $(document).ready(function () {
     }
 
     function searchCourse(query) {
+        console.log('query: ' + query);
         if ($("#searchBox").hasClass("searchTip")) {
             $("#searchBox").removeClass("searchTip");
         }
@@ -234,7 +237,7 @@ $(document).ready(function () {
             all_courses = ids.map(function(id) { return courseData[id]; });
         }
         var course = all_courses.filter(function(c) { return c['Abbr'] === code; })[0];
-        var courseInfo = new CourseInfo($('#dummy'), course, '#dummy');
+        var courseInfo = new CourseInfo($('#courseInfo'), course, '#dummy');
         var sids = Object.keys(course.Sections);
         var section_id = sids.filter(function(i) { return course.Sections[i]['Name'] === section; });
         courseInfo.addSection(section_id, true);
@@ -345,7 +348,6 @@ $(document).ready(function () {
         }.bind(this));
 
         $(".sectionDiv").hover(function () {
-
             this.fade();
         }.bind(this), function () {
             this.notFade();
@@ -379,6 +381,10 @@ $(document).ready(function () {
     }
 
     CourseInfo.prototype.getHtml = function (course) {
+        if (just_reloaded) {
+            return;
+        }
+
         this.notFade();
         $(this.placeholder).hide();
         var content;
@@ -742,6 +748,7 @@ $(document).ready(function () {
         var queryString = getCookie("AddedCourses");
         console.log("cookie: " + queryString);
         if (queryString !== "") {
+            just_reloaded = true;
             readStringAddCourse(queryString);
         }
     }

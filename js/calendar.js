@@ -170,8 +170,8 @@ Calendar.prototype.getBaseCalendar = function () {
     var content = "<table><tr class='calendarHeader'><td class='name'>" + this.name + "</td><td class='w0 timeGrid'>Mon</td><td class='w1 timeGrid'>Tue</td><td class='w2 timeGrid'>Wed</td><td class='w3 timeGrid'>Thu</td><td class='w4 timeGrid'>Fri</td></tr></table>";
     content += "<div class='calendarContentStatic'><div class='calendarContentWrapper'>";
     content += "<table class='calendarContent'>";
-    // 30min for one row, 8am-12am
-    for (var i = 0; i <= 32; i++) {
+    // 30min for one row, 8am-8pm
+    for (var i = 0; i <= 24; i++) {
         content += "<tr class='t" + i + (i % 2 == 0 ? " line" : "") + "'>";
         if (i % 2 == 0) {
 
@@ -220,6 +220,7 @@ Calendar.prototype.refreshDivision = function (item) {
 
 Calendar.prototype.resize = function () {
 
+    console.log(this.placeholder);
     $(this.placeholder).find(".calendarContentStatic").height($(this.placeholder).height() - 35);
     var timeGrid = $(this.placeholder).find(".timeGrid");
 
@@ -228,9 +229,9 @@ Calendar.prototype.resize = function () {
     $(this.placeholder).find(".timeDisplay").width($(this.placeholder).find(".name").width());
     for (var UID in this.items) {
         var itemObj = $("#" + UID);
-        var top = $(this.placeholder).find(".t" + (this.items[UID].StartTime - 1)).position()["top"];
+        var top = $(this.placeholder).find(".t" + (this.items[UID].StartTime - 1)).position()["top"] - 1;
         var bottom = $(this.placeholder).find(".t" + (this.items[UID].EndTime)).position()["top"];
-        var height = bottom - top - 5;
+        var height = bottom - top - 4;
         this.refreshDivision(this.items[UID]);
         var width = (timeGrid.width() - 10) / this.items[UID].Division;
         var dayGrid = $(this.placeholder).find(".w" + (this.items[UID].Day - 1));
@@ -383,7 +384,6 @@ CalendarCollection.prototype.getAllSectionsString = function () {
             uniqueMap[value.ID] = value;
         }
     });
-    // return Base64.encode(queryString);
     return queryString;
 }
 
