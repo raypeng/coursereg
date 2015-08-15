@@ -8,6 +8,7 @@ var isSearching;
 var courseData;
 var all_courses;
 var just_reloaded = false;
+var load_file = false;
 
 function setCaretPosition(elemId, caretPos) {
     var elem = document.getElementById(elemId);
@@ -112,6 +113,7 @@ $(document).ready(function () {
         });
 
         $("#uploadcal").click(function() {
+            load_file = true;
             $("#fileupload").click();
         });
 
@@ -150,10 +152,11 @@ $(document).ready(function () {
         var file = e.target.result,
         results;
         just_reloaded = true;
-        if (file && file.length) {
+        if (file && file.length && load_file) {
             var courses = file;
             console.log("file: " + courses);
             readStringAddCourse(courses);
+            load_file = false;
         }
         just_reloaded = false;
     }
