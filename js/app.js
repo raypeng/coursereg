@@ -791,7 +791,7 @@ $(document).ready(function () {
     function readCookieAddCourse() {
         var queryString = getCookie("AddedCourses");
         console.log("cookie: " + queryString);
-        if (queryString !== "") {
+        if (queryString && queryString !== "") {
             just_reloaded = true;
             readStringAddCourse(queryString);
         }
