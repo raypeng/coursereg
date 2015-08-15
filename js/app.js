@@ -104,49 +104,48 @@ $(document).ready(function () {
                 }
             }
         }
-
-        $(".options").click(function () {
-            if ($("#searchBox").val().length > 1) {
-                searchCourse($("#searchBox").val());
-            }
-            searchProgram($("#programSearchBox").val());
-        });
-
-        $("#uploadcal").click(function() {
-            load_file = true;
-            $("#fileupload").click();
-        });
-
-        $("#fileupload").change(function() {
-            if (!window.FileReader) {
-                alert('Your browser is not supported');
-                return false;
-            }
-            var input = $("#fileupload").get(0);
-
-            // Create a reader object
-            var reader = new FileReader();
-            if (input.files.length) {
-                var textFile = input.files[0];
-                // Read the file
-                reader.readAsText(textFile);
-                // When it's loaded, process it
-                $(reader).on('load', processFile);
-            } else {
-                alert('Please upload a file before continuing')
-            }
-        });
-
-        // layout();
-
-        // var link = getUrlParameters()["link"];
-        // if (link) {
-        //     readStringAddCourse(Base64.decode(link));
-        // } else {
-        //     readCookieAddCourse();
-        // }
-
     });
+
+    $(".options").click(function () {
+        if ($("#searchBox").val().length > 1) {
+            searchCourse($("#searchBox").val());
+        }
+        searchProgram($("#programSearchBox").val());
+    });
+
+    $("#uploadcal").off().click(function() {
+        load_file = true;
+        $("#fileupload").click();
+    });
+
+    $("#fileupload").change(function() {
+        if (!window.FileReader) {
+            alert('Your browser is not supported');
+            return false;
+        }
+        var input = $("#fileupload").get(0);
+
+        // Create a reader object
+        var reader = new FileReader();
+        if (input.files.length) {
+            var textFile = input.files[0];
+            // Read the file
+            reader.readAsText(textFile);
+            // When it's loaded, process it
+            $(reader).on('load', processFile);
+        } else {
+            alert('Please upload a file before continuing')
+        }
+    });
+
+    layout();
+
+    // var link = getUrlParameters()["link"];
+    // if (link) {
+    //     readStringAddCourse(Base64.decode(link));
+    // } else {
+    //     readCookieAddCourse();
+    // }
 
     function processFile(e) {
         var file = e.target.result,

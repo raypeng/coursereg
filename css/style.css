@@ -481,6 +481,8 @@ img.loading {
 #uploaddiv {
   opacity: 0;
   display: inline-block;
+  height: 0px;
+  width: 0px;
 }
 
 #calendarViews .singleCalendar {
