@@ -84,7 +84,7 @@ a img {
   border: 2px solid #ddd;
 }
 
-.delete {
+.listItem-delete {
   display: inline-block;
   float: right;
   left: 80%;
@@ -474,7 +474,7 @@ img.loading {
   float: left;
 }
 
-#calendarViews #shareLink {
+#calendarViews #downloadical {
   float: left;
 }
 
@@ -573,6 +573,10 @@ img.loading {
 
 #calendarViews .calendarItem .itemInfo {
   width: 200px;
+}
+
+.itemInfo-title {
+  font-weight: 700;
 }
 
 #calendarViews .calendarItem.hover {

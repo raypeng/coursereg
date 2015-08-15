@@ -135,9 +135,10 @@ Calendar.prototype.addItem = function (item) {
     }
     this.refreshDivision(item);
     
-    var content = "<div class='calendarItem course" + item.CourseID + " cal" + 
-        item.ID + "' id='" + item.UID + "'><div class='itemInfo'><b>" +
-        item.Abbr + "</b><br>" + parsedTime + "<br>@ " + parsedLocation + "</div></div>";
+    var content = "<div class='calendarItem course" + item.CourseID + " cal" +
+        item.ID + "' id='" + item.UID + "'><div class='itemInfo' value='" + item.Day +
+        "'><div class='itemInfo-title'>" + item.Abbr + "</div>" +
+        parsedTime + "<br>@ " + parsedLocation + "</div></div>";
     $(this.placeholder).find(".calendarContentWrapper").append(content);
 
     this.resize();
@@ -323,9 +324,9 @@ function CalendarCollection(placeholder, list) {
     this.split = true;
     $(placeholder).append("<div id='calendarControlBar' class='widgetTitle2'>" +
                           "<div id='downloadcal' class='calendarControls hasTooltip' data-tooltip='Download Calender'>Save My Timetable</div>" +
-                          "<div id='uploadcal' class='calendarControls hasTooltip' data-tooltip='Download Calender'>Load Saved Timetable</div>" +
+                          "<div id='uploadcal' class='calendarControls hasTooltip' data-tooltip='Upload Calender'>Load Saved Timetable</div>" +
                           "<div id='uploaddiv'><input type='file' id='fileupload'></div>" +
-                          // "<div id='shareLink' class='calendarControls hasTooltip' data-tooltip='Share Calendar'>Share My Timetable</div>" +
+                          "<div id='downloadical' class='calendarControls hasTooltip' data-tooltip='Save to iCalendar'>Export to Google Calendar or iCalendar</div>" +
                           "<div id='fallView' class='calendarControls selected'>Fall</div>"
                           + "</div>");
     $(placeholder).append("<div id='fallCalendar' class='singleCalendar'></div>");
@@ -356,6 +357,18 @@ function CalendarCollection(placeholder, list) {
         this.download(courses, fname);
     }.bind(this));
 
+    $("#downloadical").click(function () {
+        var content = this.ical();
+        var time = moment().format();
+        var fname = "";
+        for (var i = 0; i < time.length; i++) {
+            if (time[i] >= "0" && time[i] <= "9") {
+                fname = fname + time[i];
+            }
+        }
+        fname = fname.substring(0, 12) + ".ics";
+        this.download(content, fname);
+    }.bind(this));
 }
 
 CalendarCollection.prototype.resize = function () {
@@ -416,6 +429,44 @@ CalendarCollection.prototype.getAllSectionsString = function () {
 
 CalendarCollection.prototype.removeCourse = function (courseID) {
     this.fallCalendar.removeCourse(courseID);
+}
+
+CalendarCollection.prototype.ical = function() {
+    var icalentry = function(args) {
+        var uid = Math.random().toString(36).substring(2) + Math.random().toString(36).substring(2);
+        var location = args.location;
+        var title = args.title;
+        var stime = args.time.split(" - ")[0];
+        var start_time = stime.substring(0, 2) + stime.substring(3, 5) + "00";
+        var etime = args.time.split(" - ")[1];
+        var end_time = etime.substring(0, 2) + etime.substring(3, 5) + "00";
+        var start_day;
+        if (args.day == "1") {
+            start_day = "20150907";
+        } else {
+            start_day = "2015090" + (args.day - 1);
+        }
+        end_day = start_day;
+        var s = "BEGIN:VEVENT\nUID:" + uid + "\nDTSTART;TZID=(GMT+8.00)HongKong:" + start_day + "T" +
+            start_time + "Z\nDTEND;TZID=(GMT+8.00)HongKong:" + end_day + "T" + end_time +
+            "Z\nDTSTAMP:20150815T145735Z\nLOCATION:" + location +
+            "\nRRULE:FREQ=WEEKLY;UNTIL=20151130T235959Z\nSUMMARY:" + title + "\nEND:VEVENT\n";
+        return s;
+    }
+    var header = "BEGIN:VCALENDAR\nVERSION:2.0\nCALSCALE:GREGORIAN\nMETHOD:PUBLISH\nPRODID:-//hacksw/handcal//NONSGML v1.0//EN\n";
+    var result = header;
+    var contents = $(".itemInfo").contents();
+    var num = contents.length / 4;
+    for (var i = 0; i < num; i++) {
+        var day = $($(".itemInfo")[i]).attr("value");
+        var title = $(contents[4 * i + 0]).text();
+        var time = contents[4 * i + 1].data;
+        var location = contents[4 * i + 3].data.substring(2);
+        var args = { day: day, title: title, time: time, location: location };
+        result += icalentry(args);
+    }
+    result += "END:VCALENDAR\n";
+    return result;
 }
 
 CalendarCollection.prototype.download = function (text, filename) {

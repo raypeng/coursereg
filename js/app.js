@@ -692,7 +692,7 @@ $(document).ready(function () {
     }
 
     CoursesList.prototype.getHtml = function (item) {
-        var content = "<li id='list" + item.ID + "'><div class='listItem' onClick=''>" + item.Abbr + "</div><div class='delete' onClick=''>Delete</div></li>";
+        var content = "<li id='list" + item.ID + "'><div class='listItem'>" + item.Abbr + "</div><div class='delete'>Delete</div></li>";
         return content;
     }
 
@@ -718,7 +718,7 @@ $(document).ready(function () {
                 $("<div class='listItem' id='listItem" + item.CourseID + "'></div>")
                     .data("id", item.CourseID)
                     .html(
-                        "<div class='listItem-title'>" + item.ShortName + "</div><div class='delete'>Delete</div><div>" + sectionString + "</div>"
+                        "<div class='listItem-title'>" + item.ShortName + "</div><div class='listItem-delete'>Delete</div><div class='listItem-sections'>" + sectionString + "</div>"
                     ));
         }
 
