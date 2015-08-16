@@ -692,7 +692,7 @@ $(document).ready(function () {
     }
 
     CoursesList.prototype.getHtml = function (item) {
-        var content = "<li id='list" + item.ID + "'><div class='listItem'>" + item.Abbr + "</div><div class='delete'>Delete</div></li>";
+        var content = "<li id='list" + item.ID + "'><div class='listItem'>" + item.Abbr + "</div><div class='listItem-delete'>Delete</div></li>";
         return content;
     }
 
@@ -723,19 +723,19 @@ $(document).ready(function () {
         }
 
         $(".listItem").on("mouseenter", function (e) {
-            $(this).find(".delete").show();
+            $(this).find(".listItem-delete").show();
         });
 
-        $(".delete").on("click", function (e) {
+        $(".listItem-delete").on("click", function (e) {
             this.removeCourse($(e.target).parent().data("id"));
         }.bind(this));
 
         $(".listItem").on("mouseleave", function (e) {
-            $(this).find(".delete").hide();
+            $(this).find(".listItem-delete").hide();
         });
 
         $(".listItem").on("click", function (e) {
-            if (!$(e.target).hasClass("delete")) {
+            if (!$(e.target).hasClass("listItem-delete")) {
                 if (!$(this).hasClass("selected")) {
                     searchCourseInfo("c" + $(this).data("id"), this);
                     $(this).parent().children(".selected").removeClass("selected");
