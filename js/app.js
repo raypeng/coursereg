@@ -116,6 +116,7 @@ $(document).ready(function () {
     $("#uploadcal").off().click(function() {
         load_file = true;
         $("#fileupload").click();
+        ga('send', 'event', 'button', 'click', 'uploadcal', 1);
     });
 
     $("#fileupload").change(function() {
@@ -136,6 +137,10 @@ $(document).ready(function () {
         } else {
             alert('Please upload a file before continuing')
         }
+    });
+
+    $("#fork-me").click(function() {
+        ga('send', 'event', 'button', 'click', 'fork', 1);
     });
 
     layout();

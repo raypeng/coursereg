@@ -345,6 +345,7 @@ function CalendarCollection(placeholder, list) {
     }.bind(this));
 
     $("#downloadcal").click(function () {
+        ga('send', 'event', 'button', 'click', 'downloadcal', 1);
         var courses = this.getAllSectionsString();
         var time = moment().format();
         var fname = "";
@@ -358,6 +359,7 @@ function CalendarCollection(placeholder, list) {
     }.bind(this));
 
     $("#downloadical").click(function () {
+        ga('send', 'event', 'button', 'click', 'downloadical', 1);
         var content = this.ical();
         var time = moment().format();
         var fname = "";
