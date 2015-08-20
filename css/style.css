@@ -478,6 +478,10 @@ img.loading {
   float: left;
 }
 
+#calendarViews #sharecal {
+  float: left;
+}
+
 #uploaddiv {
   opacity: 0;
   display: inline-block;

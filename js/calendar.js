@@ -327,6 +327,7 @@ function CalendarCollection(placeholder, list) {
                           "<div id='uploadcal' class='calendarControls hasTooltip' data-tooltip='Upload Calender'>Load Saved Timetable</div>" +
                           "<div id='uploaddiv'><input type='file' id='fileupload'></div>" +
                           "<div id='downloadical' class='calendarControls hasTooltip' data-tooltip='Save to iCalendar'>Export to Google Calendar or iCalendar</div>" +
+                          "<div id='sharecal' class='calendarControls hasTooltip' data-tooltip='Save to iCalendar'>Share Calendar</div>" +
                           "<div id='fallView' class='calendarControls selected'>Fall</div>"
                           + "</div>");
     $(placeholder).append("<div id='fallCalendar' class='singleCalendar'></div>");
@@ -370,6 +371,14 @@ function CalendarCollection(placeholder, list) {
         }
         fname = fname.substring(0, 12) + ".ics";
         this.download(content, fname);
+    }.bind(this));
+
+    $("#sharecal").click(function () {
+        ga('send', 'event', 'button', 'click', 'sharecal', 1);
+        var param = encodeURIComponent(this.getAllSectionsString());
+        var url = window.location.href;
+        var s = url + "?link=" + param;
+        alert("Use this link:   " + s);
     }.bind(this));
 }
 

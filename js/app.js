@@ -83,7 +83,16 @@ $(document).ready(function () {
     });
     require(['json!js/new.json'], function(data){
         courseData = data; // data need to be loaded first
-        readCookieAddCourse();
+
+        var link = getUrlParameters()["link"];
+        if (link) {
+            link = decodeURIComponent(link);
+            console.log("link: " + link);
+            readStringAddCourse(link);
+        } else {
+            readCookieAddCourse();
+        }
+
         just_reloaded = false;
     });
     define(["moment"], function (moment) {
@@ -144,13 +153,6 @@ $(document).ready(function () {
     });
 
     layout();
-
-    // var link = getUrlParameters()["link"];
-    // if (link) {
-    //     readStringAddCourse(Base64.decode(link));
-    // } else {
-    //     readCookieAddCourse();
-    // }
 
     function processFile(e) {
         var file = e.target.result,
