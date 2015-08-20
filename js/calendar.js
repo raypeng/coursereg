@@ -377,7 +377,7 @@ function CalendarCollection(placeholder, list) {
         ga('send', 'event', 'button', 'click', 'sharecal', 1);
         var param = encodeURIComponent(this.getAllSectionsString());
         var url = window.location.host;
-        var s = url + "?link=" + param;
+        var s = url + "/?link=" + param;
         alert("Use this link:   " + s);
     }.bind(this));
 }

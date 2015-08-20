@@ -9,6 +9,8 @@ var courseData;
 var all_courses;
 var just_reloaded = false;
 var load_file = false;
+var show_info = false;
+
 
 function setCaretPosition(elemId, caretPos) {
     var elem = document.getElementById(elemId);
@@ -105,7 +107,7 @@ $(document).ready(function () {
             if ($(e.target).parents("#sideBar").length == 0) {
                 if (!$(e.target).hasClass("calendarItem")
                     && $(e.target).parents(".calendarItem").length == 0) {
-                    $("#courseInfo").hide("slide", 200);
+                    $("#courseInfo").hide("slide", 100);
                     $("#resultViewWrapper").hide("blind", 100);
                     $(".courseResult.selected").removeClass("selected");
                     $("#courseList").children(".selected").removeClass("selected");
@@ -498,9 +500,11 @@ $(document).ready(function () {
         }
         content += "</div>";
 
-        setTimeout(function () {
-            $(this.placeholder).show("slide", 200);
-        }.bind(this), 200);
+        if (show_info) {
+            setTimeout(function () {
+                $(this.placeholder).show("slide", 100);
+            }.bind(this), 100);
+        }
 
         return content;
 
@@ -742,6 +746,7 @@ $(document).ready(function () {
         });
 
         $(".listItem").on("click", function (e) {
+            show_info = true;
             if (!$(e.target).hasClass("listItem-delete")) {
                 if (!$(this).hasClass("selected")) {
                     searchCourseInfo("c" + $(this).data("id"), this);
