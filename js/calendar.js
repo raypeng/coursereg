@@ -376,7 +376,7 @@ function CalendarCollection(placeholder, list) {
     $("#sharecal").click(function () {
         ga('send', 'event', 'button', 'click', 'sharecal', 1);
         var param = encodeURIComponent(this.getAllSectionsString());
-        var url = window.location.href;
+        var url = window.location.host;
         var s = url + "?link=" + param;
         alert("Use this link:   " + s);
     }.bind(this));
