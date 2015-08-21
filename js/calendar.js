@@ -190,8 +190,8 @@ Calendar.prototype.getBaseCalendar = function () {
     var content = "<table><tr class='calendarHeader'><td class='name'>" + this.name + "</td><td class='w0 timeGrid'>Mon</td><td class='w1 timeGrid'>Tue</td><td class='w2 timeGrid'>Wed</td><td class='w3 timeGrid'>Thu</td><td class='w4 timeGrid'>Fri</td></tr></table>";
     content += "<div class='calendarContentStatic'><div class='calendarContentWrapper'>";
     content += "<table class='calendarContent'>";
-    // 30min for one row, 9am-8pm
-    for (var i = 2; i <= 24; i++) {
+    // 30min for one row, 9am-9pm
+    for (var i = 2; i <= 26; i++) {
         content += "<tr class='t" + i + (i % 2 == 0 ? " line" : "") + "'>";
         if (i % 2 == 0) {
 
@@ -383,6 +383,7 @@ function CalendarCollection(placeholder, list) {
 }
 
 CalendarCollection.prototype.resize = function () {
+    $(this.placeholder).height($("#pageWrapper").height() - 30);
     $(".singleCalendar").height($(this.placeholder).height());
     $(".singleCalendar").width($(this.placeholder).width() - 12);
     this.fallCalendar.resize();

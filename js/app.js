@@ -734,7 +734,8 @@ $(document).ready(function () {
                     ));
         }
 
-        $(".listItem").on("mouseenter", function (e) {
+        // $(".listItem").on("mouseenter", function (e) {
+        $(".listItem").on("mouseover", function (e) {
             $(this).find(".listItem-delete").show();
         });
 
