@@ -19885,7 +19885,7 @@
       }, 
       {
         "IsLecture": true, 
-        "Instructor": "TBA", 
+        "Instructor": "DU, Lilun", 
         "ParsedTime": {
           "MeetTimes": [
             {
@@ -20508,7 +20508,7 @@
       }, 
       {
         "IsLecture": false, 
-        "Instructor": "LEE, Wai Hong", 
+        "Instructor": "WONG, Ka Hei Kevin", 
         "ParsedTime": {
           "MeetTimes": [
             {
@@ -20692,7 +20692,7 @@
       }, 
       {
         "IsLecture": false, 
-        "Instructor": "LAM, Ming Kit", 
+        "Instructor": "CHOW, Mei Ling Natalie", 
         "ParsedTime": {
           "MeetTimes": [
             {
@@ -20707,7 +20707,7 @@
       }, 
       {
         "IsLecture": false, 
-        "Instructor": "LAM, Ming Kit", 
+        "Instructor": "CHOW, Mei Ling Natalie", 
         "ParsedTime": {
           "MeetTimes": [
             {
@@ -31759,14 +31759,14 @@
         "ParsedTime": {
           "MeetTimes": [
             {
-              "EndTime": 17, 
+              "EndTime": 23, 
               "Day": 2, 
-              "StartTime": 12
+              "StartTime": 18
             }
           ]
         }, 
         "Name": "L1", 
-        "Location": "Rm 1027, LSK Bldg (40)"
+        "Location": "Rm 4472, Lift 25-26 (30)"
       }
     ], 
     "Matching": false, 
@@ -35187,14 +35187,14 @@
         "ParsedTime": {
           "MeetTimes": [
             {
-              "EndTime": 22, 
-              "Day": 4, 
-              "StartTime": 21
+              "EndTime": 10, 
+              "Day": 1, 
+              "StartTime": 9
             }
           ]
         }, 
         "Name": "T1A", 
-        "Location": "Rm 4504, Lift 25-26 (54)"
+        "Location": "Rm 2404, Lift 17-18 (81)"
       }, 
       {
         "IsLecture": false, 
@@ -35202,14 +35202,14 @@
         "ParsedTime": {
           "MeetTimes": [
             {
-              "EndTime": 22, 
-              "Day": 2, 
-              "StartTime": 21
+              "EndTime": 10, 
+              "Day": 4, 
+              "StartTime": 9
             }
           ]
         }, 
         "Name": "T1B", 
-        "Location": "G009A, CYT Bldg (80)"
+        "Location": "Rm 5583, Lift 29-30 (40)"
       }
     ], 
     "Matching": false, 
