@@ -121,6 +121,11 @@ def parse_sessions(s):
                             r'[\d]{2}A?P?M\s*-\s*[\d]{2}:[\d]{2}A?P?M')
     times = [reduce(add, map(map_time, re.findall(time_regex, t)), [])
              for t in td]
+    times = [sorted(list(set(time))) for time in times] # trick
+    for time in times:
+        for t in time:
+            if t >= 600: # Sa Su
+                return [] # meaning ForgetAboutThisCourse
     tutors = map(lambda s: s[s.index('>')+1:s.index('<', 2)]
                  if '<a' in s else s,
                  [re.search(r'<td>(.*?)</td>', d[2]).group(1) for d in tds])

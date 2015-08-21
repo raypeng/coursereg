@@ -105,6 +105,8 @@ Calendar.prototype.addItem = function (item) {
     //     parsedLocation = locations[item.Order];
     // }
 
+    if (item.Day > 5) return;
+
     var start_hr = Math.floor((item.StartTime - 1) / 2 + 8).toString();
     if (start_hr.length < 2) {
         start_hr = '0' + start_hr;
@@ -272,6 +274,7 @@ Calendar.prototype.resize = function () {
 }
 
 Calendar.prototype.isConflicted = function (item) {
+    if (item.Day > 5) return false;
     var hasItem = this.hasItem(item);
     for (var i = item.StartTime; i <= item.EndTime; i++) {
         if (this.itemSlot[item.Day - 1][i].length > 0 && !hasItem) return true;
