@@ -248,6 +248,7 @@ $(document).ready(function () {
     }
 
     function searchCourse(query) {
+        show_info = true;
         if ($("#searchBox").hasClass("searchTip")) {
             $("#searchBox").removeClass("searchTip");
         }
