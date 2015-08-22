@@ -192,8 +192,8 @@ Calendar.prototype.getBaseCalendar = function () {
     var content = "<table><tr class='calendarHeader'><td class='name'>" + this.name + "</td><td class='w0 timeGrid'>Mon</td><td class='w1 timeGrid'>Tue</td><td class='w2 timeGrid'>Wed</td><td class='w3 timeGrid'>Thu</td><td class='w4 timeGrid'>Fri</td></tr></table>";
     content += "<div class='calendarContentStatic'><div class='calendarContentWrapper'>";
     content += "<table class='calendarContent'>";
-    // 30min for one row, 9am-9pm
-    for (var i = 2; i <= 26; i++) {
+    // 30min for one row, 9am-11pm
+    for (var i = 2; i <= 30; i++) {
         content += "<tr class='t" + i + (i % 2 == 0 ? " line" : "") + "'>";
         if (i % 2 == 0) {
 
