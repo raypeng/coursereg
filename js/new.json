@@ -14143,7 +14143,7 @@
           ]
         }, 
         "Name": "L1", 
-        "Location": "Rm 2463, Lift 25-26 (42)"
+        "Location": "Rm 4505, Lift 25-26 (64)"
       }
     ], 
     "Matching": false, 
@@ -36317,6 +36317,21 @@
         }, 
         "Name": "T1", 
         "Location": "Rm 4504, Lift 25-26 (54)"
+      }, 
+      {
+        "IsLecture": false, 
+        "Instructor": "LI, Larry", 
+        "ParsedTime": {
+          "MeetTimes": [
+            {
+              "EndTime": 20, 
+              "Day": 4, 
+              "StartTime": 19
+            }
+          ]
+        }, 
+        "Name": "T2", 
+        "Location": "Rm 5564, Lift 27-28 (30)"
       }
     ], 
     "Matching": false, 
