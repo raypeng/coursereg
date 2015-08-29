@@ -11832,7 +11832,7 @@
           ]
         }, 
         "Name": "L1", 
-        "Location": "Rm 2404, Lift 17-18 (81)"
+        "Location": "Lecture Theater K (100)"
       }, 
       {
         "IsLecture": false, 
@@ -18031,7 +18031,7 @@
           ]
         }, 
         "Name": "L1", 
-        "Location": "Rm 1026, LSK Bldg (24)"
+        "Location": "G009B, CYT Bldg (70)"
       }, 
       {
         "IsLecture": false, 
@@ -18046,7 +18046,7 @@
           ]
         }, 
         "Name": "T1", 
-        "Location": "Rm 1026, LSK Bldg (24)"
+        "Location": "G009B, CYT Bldg (70)"
       }
     ], 
     "Matching": false, 
@@ -22820,7 +22820,7 @@
           ]
         }, 
         "Name": "T23", 
-        "Location": "Rm 2126D, Lift 19 (34)"
+        "Location": "TBA"
       }, 
       {
         "IsLecture": false, 
@@ -23020,7 +23020,7 @@
           ]
         }, 
         "Name": "T37", 
-        "Location": "Rm 5504, Lift 25-26 (24)"
+        "Location": "TBA"
       }, 
       {
         "IsLecture": false, 
@@ -24466,7 +24466,7 @@
           ]
         }, 
         "Name": "T56", 
-        "Location": "Rm 5564, Lift 27-28 (30)"
+        "Location": "TBA"
       }, 
       {
         "IsLecture": false, 
@@ -28254,7 +28254,7 @@
           ]
         }, 
         "Name": "T05", 
-        "Location": "Rm 5501, Lift 25-26 (24)"
+        "Location": "TBA"
       }, 
       {
         "IsLecture": false, 
@@ -29255,26 +29255,6 @@
     "Abbr": "LANG5002", 
     "ID": 634, 
     "Sections": [
-      {
-        "IsLecture": false, 
-        "Instructor": "TBA", 
-        "ParsedTime": {
-          "MeetTimes": [
-            {
-              "EndTime": 8, 
-              "Day": 1, 
-              "StartTime": 6
-            }, 
-            {
-              "EndTime": 8, 
-              "Day": 3, 
-              "StartTime": 6
-            }
-          ]
-        }, 
-        "Name": "T01", 
-        "Location": "Rm 2129A, Lift 19 (28)"
-      }, 
       {
         "IsLecture": false, 
         "Instructor": "TBA", 
@@ -32841,13 +32821,13 @@
           "MeetTimes": [
             {
               "EndTime": 8, 
-              "Day": 4, 
+              "Day": 2, 
               "StartTime": 7
             }
           ]
         }, 
         "Name": "T6A", 
-        "Location": "Rm 5560, Lift 27-28 (30)"
+        "Location": "Rm 2302, Lift 17-18 (74)"
       }, 
       {
         "IsLecture": false, 
