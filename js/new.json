@@ -1662,14 +1662,14 @@
         "ParsedTime": {
           "MeetTimes": [
             {
-              "EndTime": 16, 
-              "Day": 5, 
-              "StartTime": 15
+              "EndTime": 17, 
+              "Day": 3, 
+              "StartTime": 16
             }
           ]
         }, 
         "Name": "T1", 
-        "Location": "Rm 2306, Lift 17-18 (111)"
+        "Location": "Rm 2404, Lift 17-18 (81)"
       }
     ], 
     "Matching": false, 
@@ -7291,6 +7291,21 @@
           ]
         }, 
         "Name": "T2", 
+        "Location": "Rm 4221, Lift 19 (32)"
+      }, 
+      {
+        "IsLecture": false, 
+        "Instructor": "KWOK, James Tin Yau", 
+        "ParsedTime": {
+          "MeetTimes": [
+            {
+              "EndTime": 22, 
+              "Day": 1, 
+              "StartTime": 21
+            }
+          ]
+        }, 
+        "Name": "T3", 
         "Location": "Rm 4221, Lift 19 (32)"
       }
     ], 
@@ -16036,7 +16051,7 @@
     "Sections": [
       {
         "IsLecture": true, 
-        "Instructor": "LAFON-VINAIS, Veronique J A", 
+        "Instructor": "CHEUNG, Cassian", 
         "ParsedTime": {
           "MeetTimes": [
             {
@@ -21509,6 +21524,36 @@
         }, 
         "Name": "T15", 
         "Location": "Rm 2126C, Lift 19 (28)"
+      }, 
+      {
+        "IsLecture": false, 
+        "Instructor": "TBA", 
+        "ParsedTime": {
+          "MeetTimes": [
+            {
+              "EndTime": 6, 
+              "Day": 3, 
+              "StartTime": 3
+            }
+          ]
+        }, 
+        "Name": "T16", 
+        "Location": "Rm 2126D, Lift 19 (34)"
+      }, 
+      {
+        "IsLecture": false, 
+        "Instructor": "TBA", 
+        "ParsedTime": {
+          "MeetTimes": [
+            {
+              "EndTime": 7, 
+              "Day": 1, 
+              "StartTime": 4
+            }
+          ]
+        }, 
+        "Name": "T17", 
+        "Location": "Rm 2127A, Lift 19 (28)"
       }
     ], 
     "Matching": false, 
@@ -27735,7 +27780,7 @@
           ]
         }, 
         "Name": "T03", 
-        "Location": "Rm 2126B, Lift 19 (28)"
+        "Location": "TBA"
       }, 
       {
         "IsLecture": false, 
@@ -28235,26 +28280,6 @@
         }, 
         "Name": "T04", 
         "Location": "Rm 2126B, Lift 19 (28)"
-      }, 
-      {
-        "IsLecture": false, 
-        "Instructor": "TBA", 
-        "ParsedTime": {
-          "MeetTimes": [
-            {
-              "EndTime": 5, 
-              "Day": 1, 
-              "StartTime": 3
-            }, 
-            {
-              "EndTime": 5, 
-              "Day": 3, 
-              "StartTime": 3
-            }
-          ]
-        }, 
-        "Name": "T05", 
-        "Location": "TBA"
       }, 
       {
         "IsLecture": false, 
@@ -29007,7 +29032,7 @@
           ]
         }, 
         "Name": "T04", 
-        "Location": "Rm 2128B, Lift 19 (28)"
+        "Location": "TBA"
       }, 
       {
         "IsLecture": false, 
@@ -29027,7 +29052,7 @@
           ]
         }, 
         "Name": "T05", 
-        "Location": "Rm 2127A, Lift 19 (28)"
+        "Location": "TBA"
       }, 
       {
         "IsLecture": false, 
@@ -29047,7 +29072,7 @@
           ]
         }, 
         "Name": "T06", 
-        "Location": "Rm 2126A, Lift 19 (28)"
+        "Location": "TBA"
       }, 
       {
         "IsLecture": false, 
@@ -29067,7 +29092,7 @@
           ]
         }, 
         "Name": "T07", 
-        "Location": "Rm 2128B, Lift 19 (28)"
+        "Location": "TBA"
       }
     ], 
     "Matching": false, 
@@ -29241,6 +29266,66 @@
         }, 
         "Name": "T08", 
         "Location": "Rm 2132C, Lift 19 (28)"
+      }, 
+      {
+        "IsLecture": false, 
+        "Instructor": "TBA", 
+        "ParsedTime": {
+          "MeetTimes": [
+            {
+              "EndTime": 8, 
+              "Day": 2, 
+              "StartTime": 6
+            }, 
+            {
+              "EndTime": 8, 
+              "Day": 4, 
+              "StartTime": 6
+            }
+          ]
+        }, 
+        "Name": "T09", 
+        "Location": "Rm 2128B, Lift 19 (28)"
+      }, 
+      {
+        "IsLecture": false, 
+        "Instructor": "TBA", 
+        "ParsedTime": {
+          "MeetTimes": [
+            {
+              "EndTime": 14, 
+              "Day": 1, 
+              "StartTime": 12
+            }, 
+            {
+              "EndTime": 5, 
+              "Day": 5, 
+              "StartTime": 3
+            }
+          ]
+        }, 
+        "Name": "T10", 
+        "Location": "Rm 2126A, Lift 19 (28)"
+      }, 
+      {
+        "IsLecture": false, 
+        "Instructor": "TBA", 
+        "ParsedTime": {
+          "MeetTimes": [
+            {
+              "EndTime": 17, 
+              "Day": 1, 
+              "StartTime": 15
+            }, 
+            {
+              "EndTime": 8, 
+              "Day": 5, 
+              "StartTime": 6
+            }
+          ]
+        }, 
+        "Name": "T11", 
+        "Location": "Rm 2128B, Lift 19 (28)"
       }
     ], 
     "Matching": false, 
@@ -31466,14 +31551,14 @@
     "Matching": true, 
     "Description": "The fundamental character of business markets and the decision-making nature of organizational customers; different approaches to business marketing, as typified in the relationships between buyers and sellers, and built around the concept of value; current trends changing the face of business-to-business marketing; critical analysis and problem-solving with respect to business market management."
   }, 
-  "706": {
+  "707": {
     "Name": "Marketing Strategy and Policy", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "IMBA 5050", 
     "Credits": 2.0, 
     "Abbr": "MARK5120", 
-    "ID": 706, 
+    "ID": 707, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -31534,14 +31619,14 @@
     "Matching": false, 
     "Description": "Strategic marketing objectives and implementation of strategies through pricing, distribution channels, promotion and new-product decisions.  This is a core course for MBA."
   }, 
-  "707": {
+  "708": {
     "Name": "The Art of War and Eastern Wisdom in Business Competition", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 1.0, 
     "Abbr": "MARK5220", 
-    "ID": 707, 
+    "ID": 708, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -31561,34 +31646,6 @@
     ], 
     "Matching": false, 
     "Description": "This course aims to explore and integrate the ancient Eastern wisdom into modern Western management science and apply to modern business competition. To achieve this goal, this course will use Sun Tzu's \"The Art of War\" as a vehicle to introduce the foundation of Eastern wisdom (Confucianism, Taoism, Buddhism) to management executives. Sun Tzu's \"The Art of War \" has proved to be a classic work on strategy, applicable to both military and business situation. This course is to crystallize some concepts and ideas put forth in \"The Art of War\" into a few business strategic principles and an innovative framework of 4Stop so that these can be more easily understood and applied."
-  }, 
-  "708": {
-    "Name": "Marketing and Behavioral Economics for Public Policy", 
-    "Prerequisites": "", 
-    "Corequisites": "", 
-    "Exclusions": "", 
-    "Credits": 2.0, 
-    "Abbr": "MARK5230", 
-    "ID": 708, 
-    "Sections": [
-      {
-        "IsLecture": true, 
-        "Instructor": "MUKHOPADHYAY, Anirban", 
-        "ParsedTime": {
-          "MeetTimes": [
-            {
-              "EndTime": 10, 
-              "Day": 5, 
-              "StartTime": 4
-            }
-          ]
-        }, 
-        "Name": "L1", 
-        "Location": "G003, LSK Bldg (70)"
-      }
-    ], 
-    "Matching": false, 
-    "Description": "This course focuses on the interface between marketing and social well-being. It tries to understand how marketers and policymakers can influence behavior using the principles of consumer psychology and behavioral economics. It is relevant for future marketers interested in social issues, future policymakers interested in influencing individuals' behavior, and businesspeople interested in issues of social responsibility and sustainability."
   }, 
   "709": {
     "Name": "Marketing Analytics for Product Management", 
@@ -37545,9 +37602,9 @@
         "ParsedTime": {
           "MeetTimes": [
             {
-              "EndTime": 20, 
+              "EndTime": 10, 
               "Day": 2, 
-              "StartTime": 15
+              "StartTime": 5
             }
           ]
         }, 
@@ -37733,14 +37790,14 @@
     "Matching": false, 
     "Description": "This skill seminar will be offered to develop the students' essential business and communication skills necessary to work in a global business environment such as communication, teamwork, negotiation and presentation skills. Some possible skill seminars include topics on time management, inter-cultural skills, group work abilities, international negotiation techniques, presentation skills, to name a few. Graded P or F."
   }, 
-  "839": {
+  "840": {
     "Name": "Chemistry of Nanomaterials", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "CHEM 4220, CHEM 5540", 
     "Credits": 3.0, 
     "Abbr": "NANO5100", 
-    "ID": 839, 
+    "ID": 840, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -37766,14 +37823,14 @@
     "Matching": false, 
     "Description": "Fundamental knowledge in development of nanostructured materials, introduction to the most updated research achievements in advanced functional materials: e.g., Liquid crystals, light emitters, conducting polymers, photoconductors, photoresists for nano- and microelectronics, nanostructured materials and devices, optical information storage, chromism, and piezo- and pyroelectricity."
   }, 
-  "840": {
+  "841": {
     "Name": "Nano Beam Technology", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "PHYS 5820", 
     "Credits": 4.0, 
     "Abbr": "NANO5250", 
-    "ID": 840, 
+    "ID": 841, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -37829,14 +37886,14 @@
     "Matching": false, 
     "Description": "Basic physical principles underlying many nano-beam techniques for fabricating and characterizing nanomaterials.  Introduction to nano process, e-beam and focus ion-beam lithograph, interaction between crystalline nanomaterials and electron/ion beams.  Electron beam diffraction and imaging, imaging contrast mechanism, nanostructure characterization and analytical electron microscopy."
   }, 
-  "841": {
+  "842": {
     "Name": "Nanomaterials for Chemical Engineering Applications", 
     "Prerequisites": "CENG 1500, CENG 3210, CENG 3230", 
     "Corequisites": "", 
     "Exclusions": "CENG 4540, CENG 5840", 
     "Credits": 3.0, 
     "Abbr": "NANO5350", 
-    "ID": 841, 
+    "ID": 842, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -37872,14 +37929,14 @@
     "Matching": false, 
     "Description": "Introduction to nanostructured materials and nanotechnology.  Synthesis and characterization of nanostructured materials.  Selected applications of nanostructured materials in chemical engineering, such as separation and catalysis."
   }, 
-  "845": {
+  "846": {
     "Name": "Physics and the Modern Society", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "A passing grade in HKCEE Physics; Level 3 or above in HKDSE 1/2x Physics or HKDSE 1x Physics; any PHYS courses at 1100-level or above", 
     "Credits": 3.0, 
     "Abbr": "PHYS1001", 
-    "ID": 845, 
+    "ID": 846, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -37965,14 +38022,14 @@
     "Matching": false, 
     "Description": "This course is for students with no physics background. Course content: Principle of scientific theories and methods, Aristotle's law, Newtonian mechanics. Thermal physics, heat engine, energy crisis and global warming. Nature of waves and the physics of hearing and vision. Electricity and magnetism, electromagnetic waves and telecommunication. Relativity, quantum physics, nuclear energy and semiconductor. Developments and outlook of contemporary physics."
   }, 
-  "846": {
+  "847": {
     "Name": "Introduction to Astrophysics and Astronomy", 
     "Prerequisites": "Level 3 or above in HKDSE 1/2x OR in HKDSE 1x Physics, OR a passing grade in HKCEE Physics", 
     "Corequisites": "", 
     "Exclusions": "PHYS 1006, PHYS 4054", 
     "Credits": 3.0, 
     "Abbr": "PHYS1002", 
-    "ID": 846, 
+    "ID": 847, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -37998,14 +38055,14 @@
     "Matching": false, 
     "Description": "This course introduces students to origin of modern astronomy, gravity, light and telescope, star light and atoms, stars (binary, formation, evolution, death), neutron stars and black holes, normal galaxies, peculiar galaxies, cosmology, the solar system, life on other world. Students without the physics prerequisite but have taken PHYS 1001 or equivalent may seek instructor\u2019s approval for enrolling in the course."
   }, 
-  "847": {
+  "848": {
     "Name": "Energy and Related Environmental Issues", 
     "Prerequisites": "Level 3 or above in HKDSE 1/2x OR in HKDSE 1x Physics, OR a passing grade in HKCEE Physics", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "PHYS1003", 
-    "ID": 847, 
+    "ID": 848, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -38051,14 +38108,14 @@
     "Matching": false, 
     "Description": "This course will introduce the basic concepts of the physical principles behind energy. Various forms of energy and their use (including electricity, fossil energy, nuclear power, various forms of renewable energy), and their impacts on the environment both from a global and a regional perspectives will be discussed. Issues related to energy conservation and related environmental issues in Hong Kong and the Pearl River Delta (PRD) will be discussed. Students without the physics prerequisite but have taken PHYS 1001 or equivalent may seek instructor\u2019s approval for enrolling in the course."
   }, 
-  "848": {
+  "849": {
     "Name": "General Physics I", 
     "Prerequisites": "Level 3 or above in HKDSE 1/2x OR HKDSE 1x Physics", 
     "Corequisites": "", 
     "Exclusions": "Level 3 or above in HKDSE Mathematics Extended Module M1/M2, PHYS 1112, PHYS 1312", 
     "Credits": 3.0, 
     "Abbr": "PHYS1111", 
-    "ID": 848, 
+    "ID": 849, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -38129,14 +38186,14 @@
     "Matching": false, 
     "Description": "PHYS 1111 and PHYS 1112 target students who have learned the most basic knowledge in physics in high school. Students with more advanced physics background should consider taking PHYS 1312. PHYS 1111 employs an algebra-based approach. Students with knowledge of calculus should take PHYS 1112 instead. Key topics include motions and Newton's laws, work and energy, conservation of energy and momentum, rotation, rigid body, simple harmonic and damped oscillations, forced oscillations, standing waves and sound waves, kinetic theory and the laws of thermodynamics. For students under the 4-year degree only. Students with a passing grade in any MATH courses coded between 1000 and 1600 need to seek instructor\u2019s approval for enrolling in this course."
   }, 
-  "849": {
+  "850": {
     "Name": "General Physics I with Calculus", 
     "Prerequisites": "(Level 3 or above in HKDSE 1/2x OR in HKDSE 1x Physics) AND Level 3 or above in HKDSE Mathematics Extended Module M1/M2", 
     "Corequisites": "", 
     "Exclusions": "PHYS 1111, PHYS 1312", 
     "Credits": 3.0, 
     "Abbr": "PHYS1112", 
-    "ID": 849, 
+    "ID": 850, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -38622,14 +38679,14 @@
     "Matching": true, 
     "Description": "PHYS 1111 and PHYS 1112 target students who have learned the most basic knowledge in physics in high school. Students with more advanced physics background should consider taking PHYS 1312. PHYS 1112 employs a calculus-based approach. Students without knowledge of calculus should take PHYS 1111 instead. Key topics include motions and Newton\u2019s Laws, work and energy, conservation of energy and momentum, rotation, rigid body, simple harmonic and damped oscillations, forced oscillations, standing waves and sound waves, kinetic theory and the laws of thermodynamics. For students under the 4-year degree only. Students without the physics prerequisite but have taken PHYS 1001 or equivalent, and/or without the mathematics prerequisite but have taken MATH 1013/ MATH 1020/ MATH 1023 or equivalent may seek instructor\u2019s approval for enrolling in the course."
   }, 
-  "850": {
+  "851": {
     "Name": "Laboratory for General Physics I", 
     "Prerequisites": "", 
     "Corequisites": "PHYS 1111 OR PHYS 1112 OR PHYS 1312", 
     "Exclusions": "", 
     "Credits": 1.0, 
     "Abbr": "PHYS1113", 
-    "ID": 850, 
+    "ID": 851, 
     "Sections": [
       {
         "IsLecture": false, 
@@ -38755,14 +38812,14 @@
     "Matching": false, 
     "Description": "A laboratory course to accompany PHYS 1111/PHYS 1112/PHYS 1312. Experiments in mechanics and heat are chosen to illustrate the experimental foundations of physics presented in the lecture courses."
   }, 
-  "851": {
+  "852": {
     "Name": "Honors General Physics I", 
     "Prerequisites": "(Level 5* or above in HKDSE 1/2x Physics OR in HKDSE 1x Physics) AND (Level 5 or above in HKDSE Mathematics Extended Module M1/M2)", 
     "Corequisites": "", 
     "Exclusions": "PHYS 1111, PHYS 1112", 
     "Credits": 3.0, 
     "Abbr": "PHYS1312", 
-    "ID": 851, 
+    "ID": 852, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -38803,14 +38860,14 @@
     "Matching": false, 
     "Description": "This course is a more in-depth version of PHYS 1112. It is intended to provide a solid foundation to students who wish to take more advanced physics courses in the future. Key topics include motions and Newton\u2019s Laws, work and energy, conservation of energy and momentum, rotation, rigid body, simple harmonic and damped oscillations, forced oscillations, standing waves and sound waves, kinetic theory and the laws of thermodynamics. Students without the prerequisite may seek instructor\u2019s approval for enrolling in the course. For students under the 4-year degree only."
   }, 
-  "852": {
+  "853": {
     "Name": "Modern Physics", 
     "Prerequisites": "PHYS 1114 OR PHYS 1154 (prior to 2014-15) OR PHYS 1314 OR PHYS 2421", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "PHYS2022", 
-    "ID": 852, 
+    "ID": 853, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -38896,14 +38953,14 @@
     "Matching": false, 
     "Description": "Introduction to relativity; introduction to quantum theory: particle-wave duality and Schrodinger equation; atoms, molecules; and statistical physics: Maxwell, Bose and Fermi distributions."
   }, 
-  "853": {
+  "854": {
     "Name": "Modern Physics Laboratory", 
     "Prerequisites": "", 
     "Corequisites": "PHYS 2022", 
     "Exclusions": "", 
     "Credits": 1.0, 
     "Abbr": "PHYS2023", 
-    "ID": 853, 
+    "ID": 854, 
     "Sections": [
       {
         "IsLecture": false, 
@@ -38984,14 +39041,14 @@
     "Matching": false, 
     "Description": "Laboratory accompanying PHYS 2022."
   }, 
-  "854": {
+  "855": {
     "Name": "Physics Seminar", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 1.0, 
     "Abbr": "PHYS2080", 
-    "ID": 854, 
+    "ID": 855, 
     "Sections": [
       {
         "IsLecture": false, 
@@ -39102,14 +39159,14 @@
     "Matching": false, 
     "Description": "Appropriate seminars and small group tutorials are scheduled to expose students to a variety of issues in science and society, and to enhance students' communication with faculties and among themselves. For Physics students in their second year of study under the four-year degree only. Graded P or F."
   }, 
-  "856": {
+  "857": {
     "Name": "Mathematical Methods in Physics II", 
     "Prerequisites": "MATH 2023 AND MATH 2121 AND (MATH 2352 OR PHYS 2124)", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "PHYS3031", 
-    "ID": 856, 
+    "ID": 857, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -39150,14 +39207,14 @@
     "Matching": false, 
     "Description": "Physical applications of analytic and numerical methods are studied in such topics as differential equations, Fourier series, Laplace transforms, matrices and vectors."
   }, 
-  "857": {
+  "858": {
     "Name": "Electricity and Magnetism I", 
     "Prerequisites": "PHYS 1114 OR PHYS 1154 (prior to 2014-15) OR PHYS 1314 OR PHYS 2421", 
     "Corequisites": "", 
     "Exclusions": "PHYS 3053", 
     "Credits": 3.0, 
     "Abbr": "PHYS3033", 
-    "ID": 857, 
+    "ID": 858, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -39228,14 +39285,14 @@
     "Matching": false, 
     "Description": "A physics core course. Electrostatics: electric charge and fields, multipoles, Laplace equation, dielectrics; magnetostatics: currents, magnetic fields and vector potential, magnetic materials; Maxwell's equations."
   }, 
-  "858": {
+  "859": {
     "Name": "Optics", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "ELEC 4610", 
     "Credits": 3.0, 
     "Abbr": "PHYS3038", 
-    "ID": 858, 
+    "ID": 859, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -39261,14 +39318,14 @@
     "Matching": false, 
     "Description": "Ray tracing, matrix optics, wave optics, superposition of waves and interference, coherence, Fresnel and Fraunhofer diffraction, polarisation, Fourier optics, holography, phase and group velocity, material dispersion, propagation of Gaussian beams."
   }, 
-  "859": {
+  "860": {
     "Name": "Introduction to Materials Science", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "PHYS3040", 
-    "ID": 859, 
+    "ID": 860, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -39294,14 +39351,14 @@
     "Matching": false, 
     "Description": "An integrated study of the nature and behavior of metals, ceramics and polymers.  Topics include crystal structures, phase diagrams, microstructures and microscopy, defects, phases and interfaces in materials systems, phase transformations, deformation, annealing and failure of materials."
   }, 
-  "860": {
+  "861": {
     "Name": "Honors Electricity and Magnetism I", 
     "Prerequisites": "PHYS 1114 (Grade B- or above) OR PHYS 1154 (Grade B- or above) (prior to 2014-15) OR PHYS 1314", 
     "Corequisites": "", 
     "Exclusions": "PHYS 3033", 
     "Credits": 4.0, 
     "Abbr": "PHYS3053", 
-    "ID": 860, 
+    "ID": 861, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -39332,14 +39389,14 @@
     "Matching": false, 
     "Description": "This course is a more in-depth version of PHYS 3033. Key topics include: (i) Electrostatics: electric charge and fields, Coulomb\u2019s law, Gauss\u2019 Law, multipoles, Laplace equation; (ii) Magnetostatics: currents, magnetic fields and vector potential, Biot-Savart Law, Faraday\u2019s law, magnetic materials; (iii) Maxwell\u2019s equations; and (iv) Interaction of electromagnetic fields with matter, polarization and magnetization, bound charges and bound currents, relative permittivity and permeability, ferromagnets."
   }, 
-  "861": {
+  "862": {
     "Name": "Introduction to Stellar Astrophysics", 
     "Prerequisites": "PHYS 2022", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "PHYS3071", 
-    "ID": 861, 
+    "ID": 862, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -39365,14 +39422,14 @@
     "Matching": false, 
     "Description": "Stellar radiation, stellar spectrum, binary stars, interiors of stars, star formation, post-main-sequence stellar evolution, stellar remnants."
   }, 
-  "863": {
+  "864": {
     "Name": "Methods of Experimental Physics I", 
     "Prerequisites": "PHYS 1114 OR PHYS 1314", 
     "Corequisites": "LANG 3013", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "PHYS3152", 
-    "ID": 863, 
+    "ID": 864, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -39453,14 +39510,14 @@
     "Matching": false, 
     "Description": "This course will cover the techniques of experimental physics in the area of electronics. Students will complete experiments involving ac circuits and input/output impedance, diodes and transistors, operational amplifiers, frequency analysis and digital electronics."
   }, 
-  "864": {
+  "865": {
     "Name": "Methods of Experimental Physics II", 
     "Prerequisites": "PHYS 1114 OR PHYS 1314", 
     "Corequisites": "LANG 3013", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "PHYS3153", 
-    "ID": 864, 
+    "ID": 865, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -39541,14 +39598,14 @@
     "Matching": false, 
     "Description": "This course will cover the techniques of experimental physics in the area of optics. Students will complete experiments involving basic optical systems, interferometry, waveguides and optical fibers, optical spectroscopy, semiconductor laser diodes, microwave reflection, scattering and diffraction."
   }, 
-  "865": {
+  "866": {
     "Name": "Thermodynamics and Statistical Physics", 
     "Prerequisites": "PHYS 2022", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "PHYS4050", 
-    "ID": 865, 
+    "ID": 866, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -39584,14 +39641,14 @@
     "Matching": false, 
     "Description": "Laws of thermodynamics, entropy, thermodynamic relations, free energy; elementary statistical mechanics: Maxwell-Boltzmann, Bose-Einstein and Fermi-Dirac statistics; elementary transport theory; applications to physical systems."
   }, 
-  "866": {
+  "867": {
     "Name": "Quantum Mechanics II", 
     "Prerequisites": "PHYS 3031/MATH 4052, AND PHYS 3036/PHYS 3037", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "PHYS4051", 
-    "ID": 866, 
+    "ID": 867, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -39617,14 +39674,14 @@
     "Matching": false, 
     "Description": "This course is mainly on approximation methods in quantum mechanics. Topics include stationary state perturbation theory, variational principle, WKB method, time-dependent perturbation theory, emission and absorption of radiation, adiabatic approximation and geometric phase, scattering theory."
   }, 
-  "867": {
+  "868": {
     "Name": "Particle Physics and the Universe", 
     "Prerequisites": "PHYS 3036 OR PHYS 3037", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "PHYS4055", 
-    "ID": 867, 
+    "ID": 868, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -39650,14 +39707,14 @@
     "Matching": false, 
     "Description": "In this course, a systematic introduction to particle physics will be provided, with the topics mainly covering: the tool of Feynman diagrams, the Standard Model in particle physics (the zoo of fundamental particles, electroweak unified theory, and Higgs mechanism), particle physics at colliders (particularly at the Large Hadron Collider), and the interplay between particle physics and cosmology. It aims at enabling students to catch up the progress in particle physics in a timely way, and appreciate the beauty of fundamental rules in nature."
   }, 
-  "868": {
+  "869": {
     "Name": "Information Physics", 
     "Prerequisites": "PHYS 3031 OR PHYS 4050", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "PHYS4058", 
-    "ID": 868, 
+    "ID": 869, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -39685,27 +39742,27 @@
         "ParsedTime": {
           "MeetTimes": [
             {
-              "EndTime": 16, 
+              "EndTime": 22, 
               "Day": 5, 
-              "StartTime": 15
+              "StartTime": 21
             }
           ]
         }, 
         "Name": "T1", 
-        "Location": "Rm 5506, Lift 25-26 (30)"
+        "Location": "Rm 4504, Lift 25-26 (54)"
       }
     ], 
     "Matching": false, 
     "Description": "Probability theory, entropy in information theory, relative entropy and mutual information, Second Law of thermodynamics, instantaneous code and block code, data compression: Huffman code, portfolio management.  Introduction to Mathematical Finance: Options and Binomial Tree."
   }, 
-  "869": {
+  "870": {
     "Name": "Physics Seminar and Tutorial II", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 1.0, 
     "Abbr": "PHYS4080", 
-    "ID": 869, 
+    "ID": 870, 
     "Sections": [
       {
         "IsLecture": false, 
@@ -39816,14 +39873,14 @@
     "Matching": false, 
     "Description": "Appropriate seminars and small group tutorials are scheduled to expose students to a variety of issues in science and society, and to enhance students' communication with faculties and among themselves. For Physics students in their fourth year of study under the four-year degree only. Graded P or F."
   }, 
-  "872": {
+  "873": {
     "Name": "Capstone Project", 
     "Prerequisites": "PHYS 3152 AND PHYS 3153", 
     "Corequisites": "LANG 4013", 
     "Exclusions": "PHYS 4291", 
     "Credits": 4.0, 
     "Abbr": "PHYS4191", 
-    "ID": 872, 
+    "ID": 873, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -39894,14 +39951,14 @@
     "Matching": false, 
     "Description": "Under the supervision of a faculty member, students will perform a capstone project based on a selection of advanced modern physics experiments. The students are expected to perform an independent literature search on the historical background, significance and impact of the experiments. Upon completion of the projects, students are required to submit a project report that complies with contemporary scientific standards and perform an oral presentation. For PHYS students under the four-year degree only."
   }, 
-  "874": {
+  "875": {
     "Name": "Electromagnetic Waves, Maxwell Equations, and Relativity", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 4.0, 
     "Abbr": "PHYS5210", 
-    "ID": 874, 
+    "ID": 875, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -39927,14 +39984,14 @@
     "Matching": false, 
     "Description": "Wave solutions of the Maxwell equations, electromagnetic wave propagation, scattering, and diffraction; Fourier optics; dielectric constant of metals and dielectrics and its analytic properties; guided waves; radiation by accelerating charges; special relativity and the transformation of Maxwell equations; radiation by moving charges.\r"
   }, 
-  "875": {
+  "876": {
     "Name": "Advanced Quantum Mechanics", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 4.0, 
     "Abbr": "PHYS5260", 
-    "ID": 875, 
+    "ID": 876, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -39960,14 +40017,14 @@
     "Matching": false, 
     "Description": "Discussion of various applications of quantum mechanics, such as collision theory, theory of spectra of atoms and molecules, theory of solids, second quantization, emission of radiation, relativistic quantum  mechanics."
   }, 
-  "876": {
+  "877": {
     "Name": "Diffraction and Imaging Techniques in Materials Science", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "NANO 5250", 
     "Credits": 4.0, 
     "Abbr": "PHYS5820", 
-    "ID": 876, 
+    "ID": 877, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -40023,14 +40080,14 @@
     "Matching": false, 
     "Description": "Fundamental crystallography; crystalline structure and defects; X-ray and electron diffractions; imaging contrast mechanisms; structure determination; analytical electron microscopy.  The instructor's approval is required for taking this course."
   }, 
-  "877": {
+  "878": {
     "Name": "Physics Seminar", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 0.0, 
     "Abbr": "PHYS6000I", 
-    "ID": 877, 
+    "ID": 878, 
     "Sections": [
       {
         "IsLecture": false, 
@@ -40051,14 +40108,14 @@
     "Matching": false, 
     "Description": "Seminar topics presented by students, faculty and guest speakers. May be repeated for credit. Graded P or F."
   }, 
-  "882": {
+  "883": {
     "Name": "Risk Management in Society", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "RMBI1010", 
-    "ID": 882, 
+    "ID": 883, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -40109,14 +40166,14 @@
     "Matching": false, 
     "Description": "Risk exists in every aspect of our life. Risk management is a concept used in many disciplines. This subject provides an opportunity for students to examine the various kinds of risk existing in society and learn about the benefits and impacts of risk management. The focus is on the definition and classification of risk  management, and its impact. The course focuses on risks in enterprise business, financial industry and our environment. Learning activities consist of a mixture of lectures, case studies, group discussion and seminars."
   }, 
-  "883": {
+  "884": {
     "Name": "Introduction to Risk Management and Business Intelligence", 
     "Prerequisites": "ISOM 2500 or MATH 2411", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "RMBI3110", 
-    "ID": 883, 
+    "ID": 884, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -40157,14 +40214,14 @@
     "Matching": false, 
     "Description": "This course presents basic concepts and techniques for risk management and business intelligence. Various types of risk such as market risk, credit risk and operational risk are discussed with business applications and regulatory issues. Modern development of business intelligence, data management techniques and related applications like financial analysis, risk assessment, customer relationship management and human capital productivity analysis are also presented."
   }, 
-  "884": {
+  "885": {
     "Name": "Financial Service Operations Management", 
     "Prerequisites": "ISOM 2500 or MATH 2411", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "RMBI4110", 
-    "ID": 884, 
+    "ID": 885, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -40190,14 +40247,14 @@
     "Matching": false, 
     "Description": "This course focuses on the products and processes in the financial industries. It analyzes and evaluates the designs and performances of the internal operations and the different distribution channels of the financial institutions, and identifies opportunities for continuous improvement in productivity and efficiency. It also covers the issues of quality control and operational risk management, the application of IT in the industry. It will also discuss the automation/outsourcing of the financial operations for non-financial institutions to improve the financial performance and risk management in the supply chain."
   }, 
-  "885": {
+  "886": {
     "Name": "Quantitative Methods for Risk Management", 
     "Prerequisites": "ISOM 3540 or MATH 2421", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "RMBI4210", 
-    "ID": 885, 
+    "ID": 886, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -40238,14 +40295,14 @@
     "Matching": false, 
     "Description": "The course covers statistical analysis, simulation and optimization methods that are commonly used in management of both market and credit risk. Risk factors and loss distribution. Losses over several periods and scaling. Coherent measures of risk. Capital allocation. Extreme value analysis. Importance sampling. Simulation techniques, including random number generations, variance reduction methods and statistical analysis of simulation outputs. Bernoulli mixture models. Financial and actuarial pricing of credit risk. Case studies of major credit losses."
   }, 
-  "887": {
+  "888": {
     "Name": "Business Student Induction", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 0.0, 
     "Abbr": "SBMT1111", 
-    "ID": 887, 
+    "ID": 888, 
     "Sections": [
       {
         "IsLecture": false, 
@@ -40401,14 +40458,14 @@
     "Matching": false, 
     "Description": "This is an induction course designed for all new students in the School of Business and Management. Students will be divided into 10 cohorts and assigned to designated academic advisors. They will also be participating in a series of planned activities, aiming to help them build bonds and simultaneously identify personal academic interest, examine educational goals, and develop plans to meet objectives through academic advising and other personal development workshops and programs."
   }, 
-  "888": {
+  "889": {
     "Name": "Business Ethics and the Individual", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 2.0, 
     "Abbr": "SBMT2010", 
-    "ID": 888, 
+    "ID": 889, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -40684,14 +40741,14 @@
     "Matching": true, 
     "Description": "This course presents and exemplifies three major traditions of ethical thought in East and West moral philosophy - namely utilitarianism, principle-based ethics and virtue-based ethics. Employing guest speakers, lectures, cases, contemporary readings, role-plays, fieldwork, reflective student writing, and discussion groups, the course engages students in a serious consideration of their own ethical standards as applied to their present academic environment and their future careers. Students come to understand through this course that while an ethical dilemma may be viewed in various ways depending on one's guiding assumptions, a decision and course of action nevertheless must be chosen in harmony with one's own moral convictions. For Business students only."
   }, 
-  "891": {
+  "892": {
     "Name": "Accounting for Managers", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SBMT5010", 
-    "ID": 891, 
+    "ID": 892, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -40712,14 +40769,14 @@
     "Matching": false, 
     "Description": "The first part of the course provides students with a basic foundation and practical understanding of financial accounting.  Focus is on the design, use and impact of financial information and accounting measures in organizational planning and control.  The second part of the course is to apply and analyze accounting information in managerial decision making with the fundamental concepts of accrual accounting given in the first part.  Registration is limited to students on the MSc program in Engineering Enterprise Management only."
   }, 
-  "894": {
+  "896": {
     "Name": "Scientific Understanding of our World", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 1.0, 
     "Abbr": "SCIE1030A", 
-    "ID": 894, 
+    "ID": 896, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -40740,14 +40797,14 @@
     "Matching": false, 
     "Description": "This course aims to provide students an overall scientific understanding of our world. This course will deal with fundamental questions, such as: Where does this universe come from? What is the origin of matter? What is the origin of life? What guides the human behavior? What shapes the development of the human society? What will be the future of this world? Graded DI/PA/F."
   }, 
-  "895": {
+  "897": {
     "Name": "Critical Thinking", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SCIE1030E", 
-    "ID": 895, 
+    "ID": 897, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -40773,14 +40830,14 @@
     "Matching": false, 
     "Description": "Understand and evaluate historical thoughts leading to the modern scientific method. Develop critical thinking skill by applying the scientific method to social concepts and current affairs. Instructor's approval is required for taking the course. Graded DI/PA/F."
   }, 
-  "897": {
+  "899": {
     "Name": "Career Building for Science Students", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "GNED 2510, GNED 2520", 
     "Credits": 1.0, 
     "Abbr": "SCIE1100", 
-    "ID": 897, 
+    "ID": 899, 
     "Sections": [
       {
         "IsLecture": false, 
@@ -40801,14 +40858,14 @@
     "Matching": false, 
     "Description": "For Science students only. Co-offered by the School of Science and the Career Center (Student Affairs Office), this course helps students in exploring careers within the arena of Science and beyond. To achieve this, it guides students to have basic understanding of the career planning process, the current job market and employers' expectation in different fields. This course also equips students with practical job application skills, such as the skills for resume writing, aptitude tests, interviews, group discussions, etc. Experiential learning opportunities and individual feedback will be provided to actively engage students in the learning process. Instructor's approval is required for enrollment in the course. Graded DI, PA or F."
   }, 
-  "898": {
+  "900": {
     "Name": "Great Ideas in Science", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SCIE1110", 
-    "ID": 898, 
+    "ID": 900, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -40834,14 +40891,14 @@
     "Matching": false, 
     "Description": "The course is designed for students with no science background. Using historical great breakthroughs in science and mathematics as examples, the course intends to inspire students to appreciate scientific approaches and develop a genuine appreciation towards human curiosity in the understanding of the world and the power of ingenuity observation to overcome ignorance. The course is composed of 4 modules covering topics in mathematics, physics, chemistry and biology. Examples of topics include geometry, quantum physics, forensic chemistry and theory of evolution. In addition, the course develops students' sense of enquiry thinking and foundation of scientific methods through various active learning processes."
   }, 
-  "900": {
+  "902": {
     "Name": "Career Building in Science Education", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 2.0, 
     "Abbr": "SCIE3100", 
-    "ID": 900, 
+    "ID": 902, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -40862,14 +40919,14 @@
     "Matching": false, 
     "Description": "This course introduces science students to the career prospects in the education sector and sharpens their skills in science teaching under regular school environments. Course activities include regular instructions, case studies on thorny scenarios that may occur in schools, guest seminars and sharing sessions by in-service teachers, job shadowing at secondary schools, and organization of school student visits at UST. For Science students in their third or fourth year of study with instructor\u2019s approval only. Graded DI, PA or F."
   }, 
-  "903": {
+  "905": {
     "Name": "First-year Seminar", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 1.0, 
     "Abbr": "SHSS1010", 
-    "ID": 903, 
+    "ID": 905, 
     "Sections": [
       {
         "IsLecture": false, 
@@ -40890,14 +40947,14 @@
     "Matching": false, 
     "Description": "The seminar will focus on a topic or research area of special interest to a faculty member at SHSS. The faculty member will lead tutorial discussions, and inspire students to examine specific issues through fieldwork, projects and/or further reading. May be graded PP."
   }, 
-  "904": {
+  "906": {
     "Name": "Capstone Project", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "SHSS 4992", 
     "Credits": 3.0, 
     "Abbr": "SHSS4991", 
-    "ID": 904, 
+    "ID": 906, 
     "Sections": [
       {
         "IsLecture": false, 
@@ -40948,14 +41005,14 @@
     "Matching": false, 
     "Description": "The capstone project aims to prepare students for research in humanities and social science, and may serve as an introduction to conducting research and writing a quality research project. For those students that do not wish to do a senior thesis, it will still enable them to learn the skills associated with a detailed research project and the presentation of research results. Enrollment in the course requires approval of the course coordinator."
   }, 
-  "905": {
+  "907": {
     "Name": "Honors Thesis", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "SHSS 4991, SHSS 4993", 
     "Credits": 6.0, 
     "Abbr": "SHSS4992", 
-    "ID": 905, 
+    "ID": 907, 
     "Sections": [
       {
         "IsLecture": false, 
@@ -40976,14 +41033,14 @@
     "Matching": false, 
     "Description": "Qualified students in the SHSS Global China Studies program are provided the option of writing a Senior Theses on an academic topic in a field of their own choice during the final year of study. The senior thesis is based on independent research conducted under the close supervision of a faculty member from SHSS. Enrollment in the course requires approval of the course coordinator."
   }, 
-  "907": {
+  "909": {
     "Name": "Elementary Statistics for Social Research", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "ISOM 2500, MATH 2411", 
     "Credits": 3.0, 
     "Abbr": "SOSC1100", 
-    "ID": 907, 
+    "ID": 909, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41009,14 +41066,14 @@
     "Matching": false, 
     "Description": "This course aims to help students to learn how to design and conduct a statistical analysis to explore an important social issue by connecting between theory, survey and data analysis. The course consists of two parts, a lecture part and a group project part. The lectures emphasize the acquisition of basic statistics including survey methods, descriptive statistics, estimation, testing hypotheses, analysis of variance, regression analysis, and how to use statistical software. In the group project, students gain hands-on experience of statistical analysis by analyzing social survey data collected by students themselves."
   }, 
-  "908": {
+  "910": {
     "Name": "Science, Technology and Work", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC1150", 
-    "ID": 908, 
+    "ID": 910, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41042,14 +41099,14 @@
     "Matching": false, 
     "Description": "The course examines the growing integration of science and technology in our workplaces, the impact of science and technology on the direction of work, the workplace and even capitalism itself. The course investigates how science and technology have been key factors in shaping work since at least the beginning of factory production and generally explores the interactions between science, technology and work since that period. By surveying a range of topics and readings from history, sociology and anthropology of the workplace, this course also includes comparative discussions of science and technology as it is integrated into the workplace in industry as compared to the services."
   }, 
-  "909": {
+  "911": {
     "Name": "China and the World:  China s Development in Historical and Comparative Perspectives", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC1190", 
-    "ID": 909, 
+    "ID": 911, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41075,14 +41132,14 @@
     "Matching": false, 
     "Description": "In order to help the students better understand the causes and consequences of the economic development in contemporary China, this course examines this phenomenon from both historical and comparative perspectives. The course starts by reviewing the formation of a vibrant market economy in China from 1700 onward and introduce progress made in the studies of Chinese economic history. This historical background is important to view the socio-economic characteristics of the pre-1949 Chinese society and their relevance to modern economic growth. This course also exposes the students to the basic concepts and analytic tools in political economy such as market economy, the state, conflict of interests, correlation and causality, and selection bias. This illustrates the importance of causal explanations in social scientific inquiry and encourages students to compare it with similar causal reasoning in science and engineering."
   }, 
-  "910": {
+  "912": {
     "Name": "International Law", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC1270", 
-    "ID": 910, 
+    "ID": 912, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41108,14 +41165,14 @@
     "Matching": false, 
     "Description": "International law (IL) is a system of principles than govern relations among states and the human rights of individuals. It is mainly studied through analyzing international agreements (treaties), customs and court decisions. The topics taught in this course are the same as those taught in almost all introductory IL courses everywhere in the world, including the history and sources of IL, states and international organizations; human rights; sea, air and space law; environmental law; the use of force; and the peaceful settlement of disputes. Many of the topics are frequently discussed in the mass media and concern events of world-wide importance."
   }, 
-  "911": {
+  "913": {
     "Name": "Contemporary China: Continuity and Change", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC1350", 
-    "ID": 911, 
+    "ID": 913, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41331,14 +41388,14 @@
     "Matching": true, 
     "Description": "This course introduces students to the major developments and changes in China since 1949 from a multidisciplinary social science perspective. It reviews the transformative and developmental strategies in the spheres of politics, economics, society and external relations during that historical epoch. It critically examines change and continuity over three periods, namely 1949-1977 or the Mao years, 1978-1989, the earlier reform and open-up years, and 1989-present, the post-Tiananmen years."
   }, 
-  "912": {
+  "914": {
     "Name": "Introduction to Economics", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "ECON 2103, ECON 2113, ECON 2123, ECON 2913, ECON 3113, ECON 3133", 
     "Credits": 3.0, 
     "Abbr": "SOSC1440", 
-    "ID": 912, 
+    "ID": 914, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41364,14 +41421,14 @@
     "Matching": false, 
     "Description": "This course provides an overview of both microeconomics and macroeconomics. It demonstrates how tools of economics can be applied for analyzing socioeconomic changes and the effects of government policies. Topics for the applications are China-related and carry global relevance."
   }, 
-  "913": {
+  "915": {
     "Name": "Contemporary Hong Kong: Government & Politics", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "SOSC 1662, SOSC 1663", 
     "Credits": 3.0, 
     "Abbr": "SOSC1661", 
-    "ID": 913, 
+    "ID": 915, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41397,14 +41454,14 @@
     "Matching": false, 
     "Description": "By unfolding the multi-dimensions of Hong Kong 's political system, political culture, and political dynamics before and after its handover, this course aims to review the factors shaping the governance of Hong Kong. Throughout the course, intensive class interaction will be encouraged and multi-media teaching instruments will be adopted to stimulate learning."
   }, 
-  "914": {
+  "916": {
     "Name": "Government, Law and Society in China", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC1840", 
-    "ID": 914, 
+    "ID": 916, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41430,14 +41487,14 @@
     "Matching": false, 
     "Description": "This course introduces to students basic knowledge about the operation of the Chinese legal system or legal institutions. It examines how laws are used in the social, economic, and political activities of the Chinese people."
   }, 
-  "915": {
+  "917": {
     "Name": "Understanding Society", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC1850", 
-    "ID": 915, 
+    "ID": 917, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41463,14 +41520,14 @@
     "Matching": false, 
     "Description": "This course will help students appreciate the power of the sociological imagination in understanding their everyday lives. This is an age in which we tend to explain human behavior in terms of our individual achievements, personalities, and even our genetic make-up. The sociologist, however, looks at human behavior as the product of groups, organizations and culture. In order to master this sociological outlook, the course shall examine a number of topics central to our lives from the point of view of sociological perspectives and methods. These topics will include: culture, deviance, inequality, religion, education, social change and development, gender, intimate relations and the family, and power and politics."
   }, 
-  "916": {
+  "918": {
     "Name": "Discovering Mind and Behavior", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC1960", 
-    "ID": 916, 
+    "ID": 918, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41516,14 +41573,14 @@
     "Matching": false, 
     "Description": "This course introduces the fundamental scientific knowledge about human thinking and behavior processes, and illustrates the relevance of this knowledge to the betterment of human performance and well-being in a wide variety of settings in the society (e.g., education, business, healthcare). Topics include but are not limited to sensation and perception, sleep and dreams, learning , memory, intelligence, personality, development, psychological disorders, and health. This course is also prerequisite for student who want to study psychology further."
   }, 
-  "917": {
+  "919": {
     "Name": "Psychology and Everyday Life", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC1980", 
-    "ID": 917, 
+    "ID": 919, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41569,14 +41626,14 @@
     "Matching": false, 
     "Description": "This course introduces major challenges of adjustment individuals face during their transition to adulthood from a psychosocial perspective. Topics include role identities, personality, emotion, stress and coping, interpersonal attraction and communication, and workplace issues."
   }, 
-  "918": {
+  "920": {
     "Name": "Environmental Politics", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC2000D", 
-    "ID": 918, 
+    "ID": 920, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41602,14 +41659,14 @@
     "Matching": false, 
     "Description": "Environmental politics is a distinctive field of study within social science. This course critically examines the many environmental ideas, actors and institutions, as well as their dynamics in shaping collective decisions at national and global levels. The first part of the course presents the competing theoretical frameworks for thinking about the environment. The second part discusses the major forms of collective action in environmental decision-making. The third part analyses governments' policy responses to environmental issues under the context of capitalist economy and liberal democracy. Students benefit from the perspectives into managing environmental sustainability through democratic politics and reflecting on the relationship between nature and society."
   }, 
-  "919": {
+  "921": {
     "Name": "Research Methods in the Social Sciences", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC2140", 
-    "ID": 919, 
+    "ID": 921, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41690,14 +41747,14 @@
     "Matching": false, 
     "Description": "The course is designed to assist students in developing a basic understanding of qualitative and quantitative data analysis and interpretation in the social sciences. Background knowledge of statistics is not required for taking this course."
   }, 
-  "920": {
+  "922": {
     "Name": "Environment and Business", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC2170", 
-    "ID": 920, 
+    "ID": 922, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41723,14 +41780,14 @@
     "Matching": false, 
     "Description": "A course designed to introduce students of all disciplines to the compatibility of business profitability and preservation of the environment.  Students learn: 1) what environmental sustainability means and how companies develop strategies for a sustainable future; 2) how an effective environmental strategy requires an integrated response among firms, government, and civil society, and the various regulatory, collaboration and other means used to achieve integration; and 3) how the various activities within a firm work together and within society to achieve the sustainability strategy."
   }, 
-  "921": {
+  "923": {
     "Name": "Introductory Environmental and Health Economics", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "ENVR 2310", 
     "Credits": 3.0, 
     "Abbr": "SOSC2310", 
-    "ID": 921, 
+    "ID": 923, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41756,14 +41813,14 @@
     "Matching": false, 
     "Description": "This course introduces students to basic theories and findings in environmental and health economics. The emphasis is on how the economic models and concepts can be used to analyze environmental and health issues. The course begins with an introduction of theoretical economic concepts and models; then it moves on to several policy-relevant environmental and health topics. Particular issues include externality, common goods and public goods, valuation of environmental goods and health, market failure and health, environmental regulations, pollution and health, and the economics of climate change."
   }, 
-  "922": {
+  "924": {
     "Name": "Development in Rural China", 
     "Prerequisites": "One of ECON 2103, ECON 2113, ECON 2913, ECON 3113, ECON 3133 or SOSC 1440", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC2630", 
-    "ID": 922, 
+    "ID": 924, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41789,14 +41846,14 @@
     "Matching": false, 
     "Description": "This course surveys the development and transformation of China's village economy from around the early twentieth century to the present. Emphasis is placed on the effects of rural institutions and policies on economic performance."
   }, 
-  "923": {
+  "925": {
     "Name": "The Chinese Cultural Revolution: A Case Study in Politico-Social Movements", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC2640", 
-    "ID": 923, 
+    "ID": 925, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41822,14 +41879,14 @@
     "Matching": false, 
     "Description": "This course guides students to explore the causes, processes, and long impact of the Chinese Cultural Revolution (CR) of 1966-76. As one of the most critical periods in China\u2019s 20th century, such a massive sociopolitical upheaval and violence not only caused many deaths, dismantled the bureaucracy and crushed the economy, but also inspired radical politico-social movements in Hong Kong, Western Europe, Japan, North America and etc. Firsthand sources and accounts on the CR will be examined together with scholarly studies concerning the CR and the 20th century radicalism worldwide."
   }, 
-  "924": {
+  "926": {
     "Name": "Gender and Society", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC2740", 
-    "ID": 924, 
+    "ID": 926, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41855,14 +41912,14 @@
     "Matching": false, 
     "Description": "This course studies how pervasive gender is in organizing our social life. We shall examine how gender organizes everything from our sense of personal identity to our daily face-to-face interactions, and how gender is embedded in institutions such as the family, labor market, media, and the state. The aim is to introduce students to a sociological perspective of thinking about gender."
   }, 
-  "925": {
+  "927": {
     "Name": "Abnormal Psychology", 
     "Prerequisites": "SOSC 1960 OR SOSC 1980", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC2970", 
-    "ID": 925, 
+    "ID": 927, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41888,14 +41945,14 @@
     "Matching": false, 
     "Description": "Abnormal psychology is the scientific study of psychopathology and abnormal behavior. This course introduces theories, research methods, and the most updated research findings in the field of abnormal psychology. Students will be introduced to various types of psychological disorders, such as mood disorders, schizophrenia, personality disorders, somatoform disorders, sex-related disorders, etc. They will also learn about the diagnosis, causes, maintenance, and treatment of major psychological disorders from an integrative perspective."
   }, 
-  "926": {
+  "928": {
     "Name": "Personality Psychology", 
     "Prerequisites": "SOSC 1960 OR SOSC 1980", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC2980", 
-    "ID": 926, 
+    "ID": 928, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41916,14 +41973,14 @@
     "Matching": false, 
     "Description": "This course surveys the principal approaches to personality and examines relevant modern research."
   }, 
-  "927": {
+  "929": {
     "Name": "Social Theory and Modernity", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC3000C", 
-    "ID": 927, 
+    "ID": 929, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41949,14 +42006,14 @@
     "Matching": false, 
     "Description": "The purpose of this course is to help students acquire familiarity with major social theories and theoretical traditions, the ability to think analytically and critically about the various social, political, and economic issues in modernity, and the skills to carry out  theoretically-informed research on modern society."
   }, 
-  "928": {
+  "930": {
     "Name": "Science and Technology in Hong Kong", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC3110", 
-    "ID": 928, 
+    "ID": 930, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -41977,14 +42034,14 @@
     "Matching": false, 
     "Description": "Exploration of Hong Kong\u2019s technology policy with special focus on government and quasi-government initiatives in research, education, and technology promotion."
   }, 
-  "929": {
+  "931": {
     "Name": "Economic Development", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "ECON 4434", 
     "Credits": 3.0, 
     "Abbr": "SOSC3120", 
-    "ID": 929, 
+    "ID": 931, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -42010,14 +42067,14 @@
     "Matching": false, 
     "Description": "This course examines the economic situations of low and middle-income economies, considering many important topics in the field of development economics. It addresses questions such as what factors help explain why some countries are rich and others poor and whether economic policies can affect these factors. We will study key aspects of life for poor households in the developing world, such as inequality, gender and the intra-household division of resources, education, child labor, health, savings and credit, institutions and globalization. Students will also study recent research in the field and examine empirical evidence on these topics. Prior knowledge in introductory economics and basic statistics is beneficial."
   }, 
-  "930": {
+  "932": {
     "Name": "Hong Kong Culture", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC3130", 
-    "ID": 930, 
+    "ID": 932, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -42043,14 +42100,14 @@
     "Matching": false, 
     "Description": "Explores the formation of Hong Kong identity, changes in communal experiences, the symbolic meanings of urban space, representations of gender in popular discourse, the question of political apathy, and various forms of cultural politics."
   }, 
-  "931": {
+  "933": {
     "Name": "Modern Dictatorship: West and East", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC3330", 
-    "ID": 931, 
+    "ID": 933, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -42076,14 +42133,14 @@
     "Matching": false, 
     "Description": "This course takes a critical and comparative review of the most significant dictatorships in the 20th century, the Third Reich under Hitler, the Soviet Russian system under Stalin, and the Chinese Party-state under Mao. All the three systems stem from ideologically powerful mass revolutionary movements and produced distinctive political, social and economic results. Many of their legacies are still felt even today and, therefore, studying them from a distance will lead to valuable lessons."
   }, 
-  "932": {
+  "934": {
     "Name": "Understanding Comparative Politics", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC3520", 
-    "ID": 932, 
+    "ID": 934, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -42109,14 +42166,14 @@
     "Matching": false, 
     "Description": "Compares the political systems of democratic, socialist and authoritarian regimes, by looking at Canada/U.S., China/Former Soviet Union, and Egypt. Course teaches the comparative method and policy analysis. Key issues include state formation, political leadership, political culture, political participation, political conflict, political institutions, and political processes and policy making."
   }, 
-  "933": {
+  "935": {
     "Name": "Democracy and Democratization around the World", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC3630", 
-    "ID": 933, 
+    "ID": 935, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -42152,14 +42209,14 @@
     "Matching": false, 
     "Description": "Based on single-country and cross-national research, this course includes some issues concerning democracy and democratization around the world. It will start with helping students understand the debates on the definitions of democracy and explore their implications. The course will then examine empirically the consequences of democracy and thereby debate on the alleged strengths and weaknesses of democracy. The course will also introduce the global expansion of democracies since the late twentieth century. It will analyze the causes of global democratization from various perspectives. Lastly, it will examine the factors shaping democratic stability from various approaches."
   }, 
-  "934": {
+  "936": {
     "Name": "Social Inequality and Social Mobility", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC3880", 
-    "ID": 934, 
+    "ID": 936, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -42185,14 +42242,14 @@
     "Matching": false, 
     "Description": "Social stratification concerns the unequal distribution of resources/rewards/opportunities which are scarce but widely desired, and the process of status attainment or social mobility whereby some persons or groups come to receive more of these scarce things than are received by others. This course will introduce the basic concepts and theories in analyzing social and economic inequalities in the contemporary world."
   }, 
-  "935": {
+  "937": {
     "Name": "Statistics in Social Science", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "MGCS 5010, SSMA 5020", 
     "Credits": 3.0, 
     "Abbr": "SOSC5090", 
-    "ID": 935, 
+    "ID": 937, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -42213,14 +42270,14 @@
     "Matching": false, 
     "Description": "An introduction to statistics at an advanced level. Necessary to understand much of social science literature and topics in research methods. Focuses on applicability to students' own research and includes computer exercises. Registration is limited to PG students in the Division of Social Science only."
   }, 
-  "936": {
+  "938": {
     "Name": "Social Science Research Design and Methods", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "SSMA 5010", 
     "Credits": 3.0, 
     "Abbr": "SOSC5110", 
-    "ID": 936, 
+    "ID": 938, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -42286,14 +42343,14 @@
     "Matching": false, 
     "Description": "To answer the question \"how do we translate concepts and theories about human interactions and institutions into empirically testable propositions?\"  The primary objectives of the course are: (1) to familiarize students with canons of contemporary social research, and (2) to enable students to initiate and execute their own research projects.  Registration is limited to PG students in the Division of Social Science only."
   }, 
-  "937": {
+  "939": {
     "Name": "Issues in Contemporary Chinese Politics", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "MGCS 5021, MGCS 5022, SSMA 5060", 
     "Credits": 3.0, 
     "Abbr": "SOSC5480", 
-    "ID": 937, 
+    "ID": 939, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -42314,14 +42371,14 @@
     "Matching": false, 
     "Description": "Major political events and basic patterns of political interaction in contemporary China since 1949.  Strategic choices of elites and ordinary people.  The structural conditions will also be studied in terms of how they would affect political actors' preference and constrain their choices."
   }, 
-  "938": {
+  "940": {
     "Name": "Categorical Data Analysis", 
     "Prerequisites": "SOSC 5090", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC5700", 
-    "ID": 938, 
+    "ID": 940, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -42342,14 +42399,14 @@
     "Matching": false, 
     "Description": "This seminar will focus on sociological (and other social scientific) applications of limited-dependent and qualitative variables.  A family of statistical models, including logit/probit models, log-linear models, one-dimensional and multidimensional association models, multinomial logistic and probit models, ordered logit and probit models, and models with sample selection and truncation.  The only prerequisite of the class is that students must have already taken courses on multiple regression (SOSC 5090) or its equivalent."
   }, 
-  "939": {
+  "941": {
     "Name": "Comparative Social Stratification", 
     "Prerequisites": "SOSC 5090", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC5730", 
-    "ID": 939, 
+    "ID": 941, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -42370,14 +42427,14 @@
     "Matching": false, 
     "Description": "This course is an introduction to the modern research literature on social stratification and social mobility, as represented by journal articles and research monographs. While this is not a course on Chinese stratification, the discussion of the general materials is expected to stimulate ideas and finally lead to empirical research papers on China. This course is combined with SOSC 5710 (\u201cChinese Social Stratification\u201d) to provide RPG students a strong training in the field of social stratification and mobility."
   }, 
-  "940": {
+  "942": {
     "Name": "Empirical Analysis in China Studies", 
     "Prerequisites": "SOSC 5340", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC5740", 
-    "ID": 940, 
+    "ID": 942, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -42398,14 +42455,14 @@
     "Matching": false, 
     "Description": "The primary goal of this course is to provide advanced research students the rare opportunity of learning how to conduct theoretically-guided empirical research on the study of China from a social science perspective. The instructor will, through presentation of his various research projects, show how a solid piece of research work is conducted from its inception to the final stage of publications. Students taking this course are expected to present their own work following the methodological format as required by the instructor, and to critically discuss the work of their peers. It is hoped that, by taking this course students who are keen on developing a research career will be able to sharpen their research skills and ideas as a result. To be able to perform solid empirical analysis, students are required to have taken SOSC 5340 prior to taking this course. The instructor assumes that students taking the proposed course have acquired most of the necessary skills required for understanding the course materials and for conducting their own research project."
   }, 
-  "941": {
+  "943": {
     "Name": "International Political Economy", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SOSC5750", 
-    "ID": 941, 
+    "ID": 943, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -42426,14 +42483,14 @@
     "Matching": false, 
     "Description": "This course explores some of the important topics in international political economy. Specifically, if focuses on the politics of international economic relations by examining international trade and finance, foreign direct investment, international organizations, and development."
   }, 
-  "947": {
+  "949": {
     "Name": "Quantitative Methods in Social Science", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "MGCS 5010, SOSC 4610, SOSC 5090", 
     "Credits": 3.0, 
     "Abbr": "SSMA5020", 
-    "ID": 947, 
+    "ID": 949, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -42499,14 +42556,14 @@
     "Matching": false, 
     "Description": "This course teaches basic concepts and skills required to conduct quantitative research in social science. Students will learn to design and conduct statistical analyses to test hypotheses. They will acquire experience in the use of statistical software such as STATA to carry out analysis of social data."
   }, 
-  "948": {
+  "950": {
     "Name": "Economic Transformations in Post-Mao China", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SSMA5050", 
-    "ID": 948, 
+    "ID": 950, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -42527,14 +42584,14 @@
     "Matching": false, 
     "Description": "This course offers a comprehensive account of the transformations in the economic institution of China since the late 1970s.\r"
   }, 
-  "949": {
+  "951": {
     "Name": "Understanding Modern Society", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 3.0, 
     "Abbr": "SSMA5130", 
-    "ID": 949, 
+    "ID": 951, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -42555,14 +42612,14 @@
     "Matching": false, 
     "Description": "This course will help students to appreciate the power of the sociological imagination for understanding their everyday lives. We shall examine a number of topics that are central to our lives from the point of view of sociological perspectives and methods, such as: culture, deviance, inequality, religion, mental health, social change and development, gender and family."
   }, 
-  "950": {
+  "952": {
     "Name": "Innovation and Society", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "SOSC 300I, SOSC 5590 (prior to 2013-14)", 
     "Credits": 3.0, 
     "Abbr": "SSMA5140", 
-    "ID": 950, 
+    "ID": 952, 
     "Sections": [
       {
         "IsLecture": true, 
@@ -42583,14 +42640,14 @@
     "Matching": false, 
     "Description": "This course introduces students to basic theories about innovation in modern societies. In addition to a study of evolutionary models of innovation and innovation systems, it will discuss key policies for the promotion of innovation in areas such as high technology, services and environment. This will be illustrated with examples of innovation policies in the United States, Europe, and Asia."
   }, 
-  "951": {
+  "953": {
     "Name": "Technology and Management Professional Activities", 
     "Prerequisites": "", 
     "Corequisites": "", 
     "Exclusions": "", 
     "Credits": 0.0, 
     "Abbr": "TEMG1010", 
-    "ID": 951, 
+    "ID": 953, 
     "Sections": [
       {
         "IsLecture": false, 
