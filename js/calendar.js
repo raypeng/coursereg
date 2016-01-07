@@ -331,10 +331,10 @@ function CalendarCollection(placeholder, list) {
                           "<div id='uploaddiv'><input type='file' id='fileupload'></div>" +
                           "<div id='downloadical' class='calendarControls hasTooltip' data-tooltip='Save to iCalendar'>Export to Google Calendar or iCalendar</div>" +
                           "<div id='sharecal' class='calendarControls hasTooltip' data-tooltip='Save to iCalendar'>Share Calendar</div>" +
-                          "<div id='fallView' class='calendarControls selected'>Fall</div>"
+                          "<div id='fallView' class='calendarControls selected'>Spring</div>"
                           + "</div>");
     $(placeholder).append("<div id='fallCalendar' class='singleCalendar'></div>");
-    this.fallCalendar = new Calendar($("#fallCalendar")[0], this, "Fall");
+    this.fallCalendar = new Calendar($("#fallCalendar")[0], this, "Spring");
 
     this.resize();
 
