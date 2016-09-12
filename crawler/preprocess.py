@@ -8,7 +8,7 @@ from operator import add
 from itertools import product
 
 
-INDEX = 'https://w5.ab.ust.hk/wcq/cgi-bin/1530/'
+INDEX = 'https://w5.ab.ust.hk/wcq/cgi-bin/1610/'
 GLOBAL_ID = 1
 
 
